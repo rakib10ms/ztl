@@ -1,0 +1,1444 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<script>
+    var __gdpr = true;
+    var __ccpa = false;
+    window.bizx = window.bizx || {
+        cmp: {
+            init: function(){/*noop*/},
+            trackingPixel: function(){/*noop*/},
+            ifConsent: function (p, pv, hasConsentFn, noConsentFn, finallyFn) {
+                if (document.URL.indexOf('cmp_debug') >= 0) {
+                    console.warn('CMP Stub invoked');
+                }
+                if (__gdpr || __ccpa) {
+                    if (noConsentFn) {
+                        noConsentFn();
+                    }
+                } else {
+                    if (hasConsentFn) {
+                        hasConsentFn();
+                    }
+                }
+                if (finallyFn) {
+                    finallyFn();
+                }
+            }
+        }
+    };
+</script>
+<script src="//a.fsdn.com/con/js/sftheme/cmp4.js?1660230670"></script>
+<link rel="stylesheet" href="//a.fsdn.com/con/css/sftheme/sandiego/cmp.css?1660230670">
+<script>
+        window.bizx.cmp.init({
+            
+        }, 'consentmanager.net');
+    </script>
+<script type="text/javascript">
+bizx.cmp.ifConsent('', ['all', 'google-ads'], function () {
+    window.aax = window.aax || {};
+    var aax = window.aax;
+    aax.initTime = new Date().getTime();
+    aax.pubId = "AAX56NJ24";
+    aax.ver = "1.2";
+    aax.hst = window.location.hostname;
+    var aaxEndpoint = "https://c.aaxads.com/aax.js?pub=" + aax.pubId + "&hst=" +
+    aax.hst + "&ver=" + aax.ver;
+    function loadScript(endpoint) {
+        var scriptTag = document.createElement("script"),
+        placeTag = document.getElementsByTagName("script")[0];
+        scriptTag.type = "text/javascript";
+        scriptTag.async = true;
+        scriptTag.src = endpoint;
+        placeTag.parentNode.insertBefore(scriptTag, placeTag);
+    }
+    loadScript(aaxEndpoint);
+
+    window.aax.cmd = window.aax.cmd || [];
+    window.aax.cmd.push(function() {
+        if (window.aax.getAbpStatus && window.aax.getAbpStatus()) {
+            console.log('ABP detect is true');
+        } else {
+            console.log('ABP detect is false');
+        }
+    });
+});
+</script>
+<script>
+            /*global unescape, window, SF*/
+            // Setup our namespace
+            if (!window.SF) { window.SF = {}; }
+            if (!window.net) { window.net = {}; }
+            if (!window.net.sf) { window.net.sf = {}; }
+            SF.Ads = {};
+            SF.cdn = '//a.fsdn.com/con';
+            SF.deploy_time = '1660230670';
+            SF.sandiego = true;
+            SF.sandiego_chrome = true;
+            SF.variant = 'sf';
+            
+            SF.Breakpoints = {
+              small: 0,
+              medium: 640,
+              leaderboard: 743,
+              billboard: 985,
+              large: 1053,
+              xlarge: 1295,
+              xxlarge: 1366
+            };
+            SF.initial_breakpoints_visible = {};
+            for (var bp in SF.Breakpoints) {
+                if (!SF.Breakpoints.hasOwnProperty(bp)) {
+                    continue;
+                }
+                SF.initial_breakpoints_visible[bp] = !window.matchMedia || window.matchMedia('(min-width: ' + SF.Breakpoints[bp] + 'px)').matches;
+            }
+            
+                
+                SF.Ads.viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+                SF.Ads.viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+            
+        </script><script>
+
+            SF.Ads.prebidOptions = {
+                showIndicators: false,
+                analytics: false,
+                timeout: 650,
+                timeouts_by_bids: {650: 3, 2000: 1, 3000: 0},
+                
+            };
+
+            SF.Ads.prebidUnits = [];if (SF.initial_breakpoints_visible.leaderboard) {
+                var thisUnit =  {
+                    bids: [{"bidder": "sovrn", "params": {"tagid": "364652"}},
+                            {"bidder": "rubicon", "params": {"zoneId": "486000", "sizes": [2], "position": "atf", "accountId": "15680", "siteId": "103240"}},
+                            {"bidder": "appnexus", "params": {"placementId": 9265107}},
+                            ],
+                    code: 'div-gpt-ad-1394209358853-0',
+                    tag: 'SF_ProjectSum_728x90_A',
+                    mediaTypes: { banner: { sizes: [] } }
+                }; 
+                if (SF.Ads.viewportWidth >= 728 && SF.Ads.viewportHeight >= 200){
+                    thisUnit.mediaTypes.banner.sizes = [[728, 90]];
+                } 
+                if (SF.Ads.viewportWidth >= 970 && SF.Ads.viewportHeight >= 901){
+                    thisUnit.mediaTypes.banner.sizes = [[728, 90], [970, 250]];
+                }
+
+                SF.Ads.prebidUnits.push(thisUnit);
+            }
+            if (SF.initial_breakpoints_visible.leaderboard) {
+                var thisUnit =  {
+                    bids: [{"bidder": "sovrn", "params": {"tagid": "364655"}},
+                            {"bidder": "rubicon", "params": {"zoneId": "486010", "sizes": [2], "accountId": "15680", "siteId": "103240"}},
+                            {"bidder": "appnexus", "params": {"placementId": 9265111}},
+                            ],
+                    code: 'div-gpt-ad-1392148208790-0',
+                    tag: 'SF_ProjectSum_728x90_B',
+                    mediaTypes: { banner: { sizes: [] } }
+                }; 
+                if (SF.Ads.viewportWidth >= 728 && SF.Ads.viewportHeight >= 200){
+                    thisUnit.mediaTypes.banner.sizes = [[728, 90]];
+                } 
+                if (SF.Ads.viewportWidth >= 1280 && SF.Ads.viewportHeight >= 200){
+                    thisUnit.mediaTypes.banner.sizes = [[728, 90], [970, 250]];
+                }
+
+                SF.Ads.prebidUnits.push(thisUnit);
+            }
+            SF.Ads.prebidAdjustments = {"bidder_deflations": {"aardvark": 1, "aol": 0.98, "appnexus": 1.11, "brealtime": 0.98, "districtm": 1.04, "districtmdmx": 1.08, "emxdigital": 1, "indexex#hange": 0.98, "indexexchange": 0.95, "komoona": 0.92, "oftmedia": 0.9, "onefiftytwo": 0.9, "pulsepoint": 0.93, "rhythmone": 0.85, "rubicon": 1.23, "rubiconlite": 1, "sovrn": 1.05, "springserve": 0.001}, "inflation": 1, "floor": 0.02};
+        </script>
+<script>
+            if (SF.Ads.prebidUnits.length) {
+                
+                document.write('<script id="pbjs_script" data-dom="https://d3tglifpd8whs6.cloudfront.net"  src="//a.fsdn.com/con/js/sftheme/vendor/bizx-prebid.js?1660230670"></' + 'script>');
+            }
+        </script>
+<script>
+            bizx.cmp.ifConsent('', ['all', 'google-ads'], function () {
+                if (window.bizxPrebid) {
+                    window.bizxPrebid.Ads.initPrebid(window.bizxPrebid.adUnits);
+                }
+            });
+        </script>
+<link rel="stylesheet" href="//a.fsdn.com/con/css/lato-900.css?1660230670">
+<link rel="stylesheet" href="//a.fsdn.com/con/css/sandiego.css?1660230670">
+<meta name="description" content="Learn about ECAP. Read ECAP reviews from real users, and view pricing and features of the Human Services software" />
+<meta name="keywords" content="ECAP, ECAP pricing, ECAP reviews" />
+<meta property="og:title" content="ECAP" />
+<meta property="og:type" content="product" />
+<meta property="og:image" content="https://a.fsdn.com/allura/s/ecap/icon?1648177033" />
+<meta property="og:url" content="https://sourceforge.net/software/product/ECAP/" />
+<meta property="og:site_name" content="SourceForge" />
+<meta property="og:description" content="Learn about ECAP. Read ECAP reviews from real users, and view pricing and features of the Human Services software" />
+<title>ECAP Reviews and Pricing 2022</title>
+<link rel="icon" sizes="180x180" href="//a.fsdn.com/con/img/sandiego/logo-180x180.png" type="image/png">
+<link rel="icon" sizes="any" href="//a.fsdn.com/con/img/sandiego/svg/originals/sf-icon-orange-no_sf.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="//a.fsdn.com/con/img/sandiego/logo-180x180.png">
+<link rel="mask-icon" href="//a.fsdn.com/con/img/sandiego/svg/originals/sf-icon-orange-no_sf.svg" color="#FF6600">
+<script>
+            /*global unescape, window, console, jQuery, $, net, SF, DD_belatedPNG, ga */
+            if (!window.SF) {
+                window.SF = {};
+            }SF.EU_country_codes = ["TF", "IT", "PM", "BM", "CW", "HU", "LT", "TC", "PN", "FK", "WF", "DE", "GF", "PF", "FI", "IO", "AT", "GL", "LV", "CZ", "MT", "DK", "NL", "JE", "GI", "GR", "RE", "EE", "KY", "ME", "VG", "BE", "AI", "ES", "PT", "GB", "SH", "FR", "GP", "BG", "MS", "MQ", "YT", "GG", "SE", "AW", "SK", "SX", "NC", "LU", "HR", "GS", "MF", "CY", "BL", "AX", "RO", "SI", "IE", "PL"];
+            SF.unknown_country_codes = ["", "A1", "A2", "O1"];
+        </script>
+<script src="//a.fsdn.com/con/js/min/sf.sandiego-head.js?1660230670"></script>
+<style>.k8fe3a0ec29264cd596336dc1c32be9d2192d81f0 { display: none !important; }</style>
+<link rel="canonical" href="https://sourceforge.net/software/product/ECAP/">
+<script>SF.adblock = true;</script>
+<script src="//a.fsdn.com/con/js/adframetop.js?1660230670"></script>
+<script>
+       /*global Foundation */
+           /*global googletag, bizxPrebid */
+            SF.Ads.gptExpected();
+       var gptadslots=[];
+       var gptadHandlers={};
+       var gptadRenderers=[];
+       SF.Ads.slotsById = {};
+       SF.Ads.idsByPath = {};
+
+       if (window.bizxPrebid) {
+        googletag.cmd.push(function() {
+            var leaderboard = googletag.sizeMapping()
+                .addSize([970, 901], [[728, 90], [970, 250]])
+                .addSize([728, 200], [[728, 90]])
+                .build();
+            var leaderboardInContent = googletag.sizeMapping()
+                .addSize([1280, 200], [[728, 90], [970, 250]])
+                .addSize([728, 200], [[728, 90]])
+                .build();
+
+                //prebid_log('GPT push define slots and targeting');
+                googletag.pubads()
+                .setForceSafeFrame(true)
+                .setTargeting('usingSafeFrame','1')
+                .setSafeFrameConfig({
+                        allowOverlayExpansion: true,
+                        allowPushExpansion: true,
+                        sandbox: true
+                });
+
+                var thisSlot;
+                thisSlot = googletag.defineSlot('/41014381/Sourceforge/SF_ProjectSum_728x90_A',
+                                                            [728, 90],'div-gpt-ad-1394209358853-0')
+                                                        .defineSizeMapping( leaderboard )
+                                                        .addService(googletag.pubads())
+                                                            .setTargeting('comm_tpc',["Foster Care", "Government", "Human Services", "Nonprofit"])
+                                                            .setTargeting('shortname',"ecap.s")
+                                                            .setTargeting('dc_ref',"https://sourceforge.net/software/product/ECAP/")
+                                                            .setTargeting('page_type',"pg_commercial_billboard");
+                gptadslots.push(thisSlot);
+                SF.Ads.slotsById['div-gpt-ad-1394209358853-0'] = thisSlot;
+                SF.Ads.idsByPath['/41014381/Sourceforge/SF_ProjectSum_728x90_A'] = 'div-gpt-ad-1394209358853-0';
+                thisSlot = googletag.defineSlot('/41014381/Sourceforge/SF_ProjectSum_728x90_B',
+                                                            [728, 90],'div-gpt-ad-1392148208790-0')
+                                                        .defineSizeMapping( leaderboardInContent )
+                                                        .addService(googletag.pubads())
+                                                            .setTargeting('comm_tpc',["Foster Care", "Government", "Human Services", "Nonprofit"])
+                                                            .setTargeting('shortname',"ecap.s")
+                                                            .setTargeting('dc_ref',"https://sourceforge.net/software/product/ECAP/")
+                                                            .setTargeting('page_type',"pg_commercial_billboard");
+                gptadslots.push(thisSlot);
+                SF.Ads.slotsById['div-gpt-ad-1392148208790-0'] = thisSlot;
+                SF.Ads.idsByPath['/41014381/Sourceforge/SF_ProjectSum_728x90_B'] = 'div-gpt-ad-1392148208790-0';
+                thisSlot = googletag.defineSlot('/7346874/SF-300x250',[300, 250],'div-gpt-ad-1392148208795-0')
+                                                        .addService(googletag.pubads())
+                                                            .setTargeting('comm_tpc',["Foster Care", "Government", "Human Services", "Nonprofit"])
+                                                            .setTargeting('shortname',"ecap.s")
+                                                            .setTargeting('dc_ref',"https://sourceforge.net/software/product/ECAP/")
+                                                            .setTargeting('sz',"300x250")
+                                                            .setTargeting('page_type',"pg_commercial_billboard");
+                gptadslots.push(thisSlot);
+                SF.Ads.slotsById['div-gpt-ad-1392148208795-0'] = thisSlot;
+                SF.Ads.idsByPath['/7346874/SF-300x250'] = 'div-gpt-ad-1392148208795-0';   
+                
+
+                googletag.pubads().setTargeting('requestSource', 'GPT');
+                googletag.pubads().enableAsyncRendering();
+
+                googletag.pubads().collapseEmptyDivs();
+                googletag.pubads().addEventListener('slotOnload', function(event) {
+                    SF.Ads.Helpers.getSizeAndSetClass.call(this, event);
+                });
+                googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+                    var unitName = event.slot.getAdUnitPath();
+                    if ( unitName in gptadHandlers ) {
+                    for (var i = 0; i < gptadHandlers[unitName].length; i++) {
+                        try {
+                            SF.Ads.RenderHandlers[gptadHandlers[unitName][i]].call(this, event);
+                        } catch (e) {
+                        }
+                    }
+                    }
+
+                    SF.Ads.RenderHandlers.decorateSizeDelivered.call(this, event);
+                    if(SF.Ads.scrollFixable) {
+                        SF.Ads.scrollFixable.scrollRelocate();
+                    }
+                });
+                googletag.pubads().addEventListener('slotVisibilityChanged', SF.Ads.visibilityChangedTracker);
+                SF.Ads.setupAdRefresh();
+                googletag.pubads().addEventListener('impressionViewable', SF.Ads.RenderHandlers.viewabilityInstrumentation);
+                
+                googletag.pubads().addEventListener('slotRenderEnded', SF.Ads.listenerForBlockThis);
+                bizxPrebid.Ads.pushToGoogle();
+
+                googletag.enableServices();
+            });
+        }
+   </script>
+<script>
+        /* globals bizx */
+        function initPiwik(){
+            var _paq = window._paq = window._paq || [];
+            _paq.push(['trackPageView', document.title, {
+                    dimension1: 'ecap.s',
+                dimension2: 'pg_commercial_billboard',
+                dimension3: SF.devicePixelRatio,
+                
+                    dimension4: 'software: ECAP',
+                
+            }]);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+                var u="//analytics.slashdotmedia.com/";
+                _paq.push(['setTrackerUrl', u+'sf.php']);
+                _paq.push(['setSiteId', 39]);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'sf.js'; s.parentNode.insertBefore(g,s);
+            })();
+        }
+        bizx.cmp.ifConsent('publisher', ['storage', 'measurement'], initPiwik);
+    </script>
+<script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "WebSite",
+                "name": "SourceForge",
+                "url": "https://sourceforge.net/"
+            }
+        </script>
+</head>
+<body id="pg_commercial_billboard" class="
+l-commercial l-commercial-billboard
+  anonymous has-ads  sandiego v-sf">
+<div id="busy-spinner"></div>
+<div id="messages">
+</div>
+<div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+
+<ul class="header-nav-menulist">
+<li class="highlight search">
+<form method="get" action="/software/" class="m-search-form">
+<input type="text" placeholder="Search for software or solutions" autocomplete="off" name="q">
+<label>
+<input type="submit" class="bt" value="">
+<svg data-name="search" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z" /></svg>
+</label>
+</form>
+</li>
+<li class="highlight"><a href="https://sourceforge.net/auth/">Join/Login</a></li>
+<li><a href="/directory/">Open Source Software</a></li>
+<li><a href="/software/">Business Software</a></li>
+<li><a href="/blog/" title="Blog">Blog</a></li>
+<li><a href="/about">About</a></li>
+<li><a id="header-nav-more" data-toggle="header-nav-more header-nav-more-content" data-toggler=".toggled">More</a></li>
+<li>
+<ul id="header-nav-more-content" class="toggled" data-toggler=".toggled">
+<li><a href="/articles/">Articles</a></li>
+<li><a href="https://sourceforge.net/p/forge/documentation/Docs%20Home/">Site Documentation</a></li>
+<li><a href="/support">Support Request</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="off-canvas-content" data-off-canvas-content>
+<script>
+    SF.linkout_icon = '<svg  data-name="sf-linkout-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve"><polygon class="st0" points="243.2,243.2 56.8,243.2 56.8,56.8 123,56.8 123,9 9,9 9,291 291,291 291,179.4 243.2,179 "/><polygon class="st0" points="128.5,213 155,186.5 176,165.5 206.7,196.3 235.5,132.5 248.9,102.6 290.6,9.8 291,9 290.6,9.2 197.4,51.1 169.1,63.8 103.7,93.3 137,126.5 115.9,147.5 89.5,174 "/></svg>';
+</script>
+<section class="sandiego l-header-nav-top show-for-large">
+<div class="row">
+<a href="/" title="Home" class="sf-logo">
+<svg data-name="sf-logo-full" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 653 102.6" style="enable-background:new 0 0 653 102.6;" xml:space="preserve"><path class="st0" d="M66.9,54.5c0-19.1-6.8-27.8-10.4-31.1c-0.7-0.6-1.8-0.1-1.7,0.9c0.7,10.8-12.9,13.5-12.9,30.4h0 c0,0,0,0.1,0,0.1c0,10.3,7.8,18.7,17.4,18.7c9.6,0,17.4-8.4,17.4-18.7c0,0,0-0.1,0-0.1h0c0-4.8-1.8-9.4-3.6-12.8 c-0.4-0.7-1.4-0.4-1.3,0.2C75.1,56.7,66.9,65.7,66.9,54.5z" /><g> <path class="st0" d="M46.2,94.8c-0.4,0-0.9-0.2-1.2-0.5L0.5,49.8c-0.6-0.6-0.6-1.7,0-2.4l47-47C47.8,0.2,48.2,0,48.6,0h13.5 c0.8,0,1.3,0.5,1.5,1c0.2,0.5,0.2,1.2-0.4,1.8L19.1,47c-0.9,0.9-0.9,2.3,0,3.2L54,85.2c0.6,0.6,0.6,1.7,0,2.4l-6.7,6.8 C47,94.6,46.6,94.8,46.2,94.8z" /></g><g> <path class="st0" d="M55.1,102.6c-0.8,0-1.3-0.5-1.5-1c-0.2-0.5-0.2-1.2,0.4-1.8l44.2-44.2c0.4-0.4,0.7-1,0.7-1.6 c0-0.6-0.2-1.2-0.7-1.6L63.2,17.4c-0.6-0.6-0.6-1.7,0-2.4l6.8-6.8c0.3-0.3,0.7-0.5,1.2-0.5S72,8,72.3,8.3l44.4,44.5 c0.3,0.3,0.5,0.7,0.5,1.2s-0.2,0.9-0.5,1.2l-47,47c-0.3,0.3-0.7,0.5-1.2,0.5H55.1z" /></g><g> <g> <path class="st1" d="M167.2,32c-0.2,0.4-0.5,0.6-1,0.6c-0.3,0-0.7-0.2-1.2-0.7c-0.5-0.5-1.2-1-2-1.5c-0.9-0.6-1.9-1.1-3.2-1.5 c-1.3-0.5-2.9-0.7-4.8-0.7c-1.9,0-3.5,0.3-5,0.8c-1.4,0.5-2.6,1.3-3.6,2.2s-1.7,2-2.2,3.2c-0.5,1.2-0.8,2.5-0.8,3.8 c0,1.8,0.4,3.2,1.1,4.4c0.7,1.1,1.7,2.1,3,2.9c1.2,0.8,2.6,1.5,4.2,2c1.6,0.6,3.2,1.1,4.8,1.6c1.6,0.5,3.2,1.1,4.8,1.8 c1.6,0.6,2.9,1.5,4.2,2.4s2.2,2.2,3,3.6c0.7,1.4,1.1,3.2,1.1,5.3c0,2.2-0.4,4.2-1.1,6.1c-0.7,1.9-1.8,3.6-3.2,5 c-1.4,1.4-3.2,2.5-5.2,3.4c-2.1,0.8-4.4,1.2-7,1.2c-3.4,0-6.4-0.6-8.8-1.8c-2.5-1.2-4.6-2.9-6.5-5l1-1.6c0.3-0.4,0.6-0.5,1-0.5 c0.2,0,0.5,0.1,0.8,0.4c0.3,0.3,0.8,0.7,1.2,1.1c0.5,0.4,1.1,0.9,1.8,1.4c0.7,0.5,1.5,1,2.4,1.4c0.9,0.4,1.9,0.8,3.1,1.1 c1.2,0.3,2.5,0.4,4,0.4c2.1,0,3.9-0.3,5.5-0.9c1.6-0.6,3-1.5,4.1-2.5s2-2.4,2.6-3.8c0.6-1.5,0.9-3.1,0.9-4.7 c0-1.8-0.4-3.3-1.1-4.5c-0.7-1.2-1.7-2.2-3-3c-1.2-0.8-2.6-1.5-4.2-2c-1.6-0.5-3.2-1.1-4.8-1.6c-1.6-0.5-3.2-1.1-4.8-1.7 c-1.6-0.6-2.9-1.4-4.2-2.4c-1.2-1-2.2-2.2-3-3.7c-0.7-1.5-1.1-3.3-1.1-5.6c0-1.7,0.3-3.4,1-5c0.7-1.6,1.6-3,2.9-4.3 c1.3-1.2,2.8-2.2,4.7-3c1.9-0.7,4-1.1,6.4-1.1c2.7,0,5.1,0.4,7.3,1.3c2.1,0.9,4.1,2.2,5.9,3.9L167.2,32z" /> <path class="st2" d="M152.9,78.8c-3.5,0-6.6-0.6-9.1-1.9c-2.5-1.2-4.8-3-6.7-5.1l-0.3-0.3l1.3-2c0.6-0.7,1.1-0.8,1.5-0.8 c0.4,0,0.8,0.2,1.2,0.6c0.3,0.3,0.8,0.7,1.3,1.1c0.5,0.4,1.1,0.9,1.7,1.4c0.7,0.5,1.4,0.9,2.3,1.3c0.9,0.4,1.9,0.8,3,1 c1.1,0.3,2.4,0.4,3.9,0.4c2,0,3.8-0.3,5.3-0.9c1.5-0.6,2.8-1.4,3.9-2.4c1-1,1.9-2.2,2.4-3.6c0.6-1.4,0.8-2.9,0.8-4.5 c0-1.7-0.3-3.1-1-4.2c-0.7-1.1-1.6-2-2.8-2.8c-1.2-0.8-2.5-1.4-4-1.9c-1.5-0.5-3.1-1.1-4.8-1.6c-1.7-0.5-3.3-1.1-4.8-1.7 c-1.6-0.7-3.1-1.5-4.3-2.5c-1.3-1-2.3-2.4-3.1-3.9c-0.8-1.6-1.2-3.5-1.2-5.8c0-1.8,0.3-3.6,1-5.3c0.7-1.7,1.7-3.2,3-4.5 c1.3-1.3,3-2.3,4.9-3.1c1.9-0.8,4.2-1.2,6.6-1.2c2.8,0,5.3,0.4,7.5,1.3c2.2,0.9,4.2,2.3,6.1,4.1l0.3,0.3l-1.1,2.1 c-0.6,1.1-1.7,1.4-3.1,0.1c-0.5-0.4-1.1-0.9-2-1.4c-0.8-0.5-1.9-1-3.1-1.5c-1.2-0.4-2.7-0.7-4.6-0.7c-1.8,0-3.4,0.3-4.8,0.8 c-1.3,0.5-2.5,1.2-3.4,2.1c-0.9,0.9-1.6,1.9-2.1,3c-0.5,1.1-0.7,2.4-0.7,3.6c0,1.6,0.3,3,1,4c0.7,1.1,1.6,2,2.8,2.8 c1.2,0.8,2.5,1.4,4,2c1.5,0.5,3.1,1.1,4.8,1.6c1.6,0.5,3.3,1.1,4.8,1.8c1.6,0.7,3.1,1.5,4.3,2.5c1.3,1,2.3,2.3,3.1,3.8 c0.8,1.5,1.2,3.4,1.2,5.6c0,2.2-0.4,4.4-1.2,6.4c-0.8,2-1.9,3.7-3.4,5.2c-1.5,1.5-3.3,2.6-5.4,3.5 C158.1,78.3,155.6,78.8,152.9,78.8z M138.4,71.3c1.7,1.9,3.7,3.4,6,4.5c2.4,1.2,5.3,1.8,8.6,1.8c2.5,0,4.8-0.4,6.8-1.2 c2-0.8,3.6-1.9,5-3.2c1.3-1.3,2.4-3,3.1-4.8c0.7-1.8,1.1-3.8,1.1-5.9c0-2-0.4-3.7-1-5.1c-0.7-1.3-1.6-2.5-2.8-3.4 c-1.2-0.9-2.5-1.7-4-2.4c-1.5-0.6-3.1-1.2-4.7-1.8c-1.6-0.5-3.2-1.1-4.8-1.6c-1.6-0.6-3-1.3-4.3-2.1c-1.3-0.8-2.3-1.9-3.1-3.1 c-0.8-1.2-1.2-2.8-1.2-4.7c0-1.4,0.3-2.8,0.8-4.1c0.5-1.3,1.3-2.5,2.3-3.4c1-1,2.3-1.8,3.8-2.3c1.5-0.6,3.3-0.8,5.2-0.8 c1.9,0,3.6,0.2,5,0.7c1.3,0.5,2.5,1,3.3,1.6c0.9,0.6,1.6,1.1,2.1,1.6c0.6,0.5,0.8,0.5,0.8,0.5c0.1,0,0.3,0,0.4-0.3l0.7-1.3 c-1.6-1.5-3.4-2.7-5.3-3.5c-2.1-0.8-4.4-1.2-7-1.2c-2.3,0-4.4,0.4-6.2,1.1c-1.8,0.7-3.3,1.7-4.5,2.8c-1.2,1.2-2.1,2.5-2.8,4.1 c-0.6,1.5-0.9,3.1-0.9,4.8c0,2.1,0.4,3.9,1.1,5.3c0.7,1.4,1.6,2.6,2.8,3.5c1.2,0.9,2.5,1.7,4,2.3c1.5,0.6,3.1,1.2,4.7,1.7 c1.6,0.5,3.2,1,4.8,1.6c1.6,0.6,3,1.2,4.3,2.1c1.3,0.8,2.4,1.9,3.1,3.2c0.8,1.3,1.2,2.9,1.2,4.9c0,1.8-0.3,3.4-0.9,5 c-0.6,1.6-1.5,2.9-2.7,4c-1.2,1.1-2.6,2-4.3,2.7c-1.7,0.6-3.6,1-5.7,1c-1.5,0-2.9-0.2-4.2-0.5c-1.2-0.3-2.3-0.7-3.2-1.1 c-0.9-0.4-1.8-0.9-2.5-1.5c-0.7-0.5-1.3-1-1.8-1.4c-0.5-0.4-0.9-0.8-1.2-1.1c-0.3-0.3-0.5-0.3-0.5-0.3c-0.1,0-0.3,0-0.5,0.3 L138.4,71.3z" /> </g> <g> <path class="st1" d="M226.7,51.6c0,4-0.6,7.6-1.8,10.9c-1.2,3.3-2.9,6.1-5.1,8.4c-2.2,2.3-4.8,4.1-7.8,5.4 c-3,1.3-6.4,1.9-10.1,1.9c-3.6,0-7-0.6-10-1.9c-3-1.3-5.6-3-7.8-5.4c-2.2-2.3-3.9-5.1-5.1-8.4c-1.2-3.3-1.8-6.9-1.8-10.9 c0-4,0.6-7.6,1.8-10.9c1.2-3.3,2.9-6.1,5.1-8.4c2.2-2.3,4.8-4.1,7.8-5.4c3-1.3,6.4-1.9,10-1.9c3.7,0,7.1,0.6,10.1,1.9 c3,1.3,5.6,3,7.8,5.4c2.2,2.3,3.9,5.1,5.1,8.4C226.1,44,226.7,47.6,226.7,51.6z M222.8,51.6c0-3.6-0.5-6.9-1.5-9.8 c-1-2.9-2.4-5.3-4.2-7.3c-1.8-2-4-3.5-6.6-4.6c-2.6-1.1-5.4-1.6-8.5-1.6c-3.1,0-5.9,0.5-8.5,1.6c-2.6,1.1-4.8,2.6-6.6,4.6 c-1.8,2-3.3,4.4-4.3,7.3c-1,2.9-1.5,6.1-1.5,9.8c0,3.6,0.5,6.9,1.5,9.8c1,2.9,2.4,5.3,4.3,7.3c1.8,2,4,3.5,6.6,4.6 c2.6,1.1,5.4,1.6,8.5,1.6c3.1,0,6-0.5,8.5-1.6c2.6-1,4.8-2.6,6.6-4.6c1.8-2,3.2-4.4,4.2-7.3C222.3,58.5,222.8,55.3,222.8,51.6z" /> <path class="st2" d="M202,78.7c-3.7,0-7.2-0.7-10.2-1.9c-3.1-1.3-5.8-3.1-8-5.5c-2.2-2.4-4-5.2-5.2-8.6c-1.2-3.3-1.9-7.1-1.9-11.1 c0-4,0.6-7.8,1.9-11.1c1.2-3.3,3-6.2,5.2-8.6c2.2-2.4,4.9-4.2,8-5.5c3.1-1.3,6.5-2,10.2-2c3.8,0,7.2,0.7,10.3,1.9 c3.1,1.3,5.8,3.1,8,5.5c2.2,2.4,4,5.3,5.2,8.6c1.2,3.3,1.8,7,1.8,11.1c0,4.1-0.6,7.8-1.8,11.1c-1.2,3.3-3,6.2-5.2,8.6 c-2.2,2.4-4.9,4.2-8,5.5C209.2,78.1,205.7,78.7,202,78.7z M202,25.7c-3.5,0-6.8,0.6-9.8,1.9c-2.9,1.2-5.5,3-7.6,5.2 c-2.1,2.2-3.8,5-4.9,8.2c-1.2,3.2-1.8,6.8-1.8,10.7c0,3.9,0.6,7.5,1.8,10.7c1.2,3.2,2.8,5.9,4.9,8.2c2.1,2.2,4.7,4,7.6,5.2 c2.9,1.2,6.2,1.8,9.8,1.8c3.6,0,6.9-0.6,9.8-1.8c2.9-1.2,5.5-3,7.6-5.2c2.1-2.2,3.8-5,4.9-8.1c1.2-3.2,1.8-6.8,1.8-10.7 c0-3.9-0.6-7.5-1.8-10.7c-1.2-3.2-2.8-5.9-4.9-8.2c-2.1-2.2-4.7-4-7.6-5.2C208.9,26.3,205.6,25.7,202,25.7z" /> </g> <g> <path class="st1" d="M256.4,74.9c2.5,0,4.7-0.4,6.7-1.3c2-0.9,3.6-2.1,5-3.6c1.4-1.5,2.4-3.4,3.1-5.4c0.7-2.1,1.1-4.3,1.1-6.8 V25.7h3.7v32.1c0,2.9-0.5,5.5-1.4,8c-0.9,2.5-2.2,4.6-3.9,6.5c-1.7,1.8-3.8,3.3-6.2,4.3c-2.4,1-5.2,1.6-8.2,1.6 c-3,0-5.8-0.5-8.2-1.6c-2.4-1.1-4.5-2.5-6.2-4.3c-1.7-1.8-3-4-3.9-6.5c-0.9-2.5-1.4-5.2-1.4-8V25.7h3.8v32c0,2.4,0.4,4.7,1.1,6.8 c0.7,2.1,1.8,3.9,3.1,5.4c1.4,1.5,3,2.7,5,3.6C251.6,74.5,253.9,74.9,256.4,74.9z" /> <path class="st2" d="M256.4,78.8c-3.1,0-5.9-0.5-8.4-1.6c-2.5-1.1-4.7-2.6-6.4-4.5c-1.7-1.9-3.1-4.2-4-6.7 c-0.9-2.5-1.4-5.3-1.4-8.2V25.1h5v32.7c0,2.3,0.4,4.5,1,6.6c0.7,2,1.7,3.8,3,5.2c1.3,1.5,2.9,2.6,4.8,3.5c1.9,0.8,4,1.3,6.4,1.3 c2.4,0,4.6-0.4,6.4-1.2c1.9-0.8,3.5-2,4.8-3.5c1.3-1.5,2.3-3.2,3-5.2c0.7-2,1-4.2,1-6.6V25.1h5v32.7c0,2.9-0.5,5.7-1.4,8.2 c-0.9,2.5-2.3,4.8-4,6.7c-1.7,1.9-3.9,3.4-6.4,4.5C262.3,78.3,259.5,78.8,256.4,78.8z M237.3,26.3v31.5c0,2.8,0.4,5.4,1.3,7.8 c0.9,2.4,2.1,4.5,3.8,6.3c1.6,1.8,3.6,3.2,6,4.2c2.3,1,5,1.5,8,1.5c2.9,0,5.6-0.5,8-1.5c2.3-1,4.4-2.4,6-4.2 c1.6-1.8,2.9-3.9,3.8-6.3c0.9-2.4,1.3-5,1.3-7.8V26.3h-2.5v31.5c0,2.5-0.4,4.8-1.1,7c-0.7,2.2-1.8,4.1-3.3,5.7 c-1.4,1.6-3.2,2.9-5.2,3.8c-2,0.9-4.4,1.4-6.9,1.4c-2.6,0-4.9-0.5-6.9-1.4c-2-0.9-3.8-2.2-5.2-3.8c-1.4-1.6-2.5-3.5-3.2-5.7 c-0.7-2.1-1.1-4.5-1.1-7V26.3H237.3z" /> </g> <g> <path class="st1" d="M297.5,51.3c1,0,0.9,0,0.9,0l2.2,0c2.3,0,4.4-0.3,6.2-0.8c1.8-0.6,3.4-1.3,4.6-2.4c1.3-1,2.2-2.3,2.9-3.7 c0.7-1.4,1-3.1,1-4.9c0-3.7-1.2-6.4-3.6-8.2c-2.4-1.8-5.9-2.7-10.6-2.7h-9.5v22.7v2.8v23.5h-3.7V25.7h13.2c6,0,10.5,1.2,13.4,3.5 c3,2.3,4.4,5.7,4.4,10.2c0,2-0.3,3.8-1,5.4c-0.7,1.6-1.7,3.1-3,4.3c-1.3,1.2-2.8,2.3-4.6,3c-1.8,0.8-3.9,1.3-6.1,1.6 c0.6,0.4,1.1,0.9,1.6,1.5l17.9,22.4h-3.3c-0.4,0-0.7-0.1-1-0.2c-0.3-0.1-0.6-0.4-0.8-0.7l-16.6-21c-0.4-0.5-0.9-0.9-1.3-1.1 c-0.5-0.2-3.4-0.3-4.4-0.3C296.3,51.6,296.7,51.3,297.5,51.3z" /> <path class="st2" d="M325,78.2h-4.5c-0.5,0-0.9-0.1-1.3-0.3c-0.4-0.2-0.7-0.5-1-0.9l-16.6-21c-0.4-0.5-0.7-0.8-1.1-1 c-0.4-0.1-2.8-0.3-4.1-0.3h-0.6v-2.6c0-0.9,0.2-1.4,1.8-1.4c0.9,0,1,0,1,0l2.2,0c2.2,0,4.2-0.3,6-0.8c1.7-0.5,3.2-1.3,4.4-2.3 c1.2-1,2.1-2.1,2.7-3.5c0.6-1.4,0.9-2.9,0.9-4.6c0-3.5-1.1-6-3.4-7.7c-2.3-1.7-5.7-2.6-10.2-2.6h-8.9v48.9h-5V25.1h13.9 c6.1,0,10.7,1.2,13.8,3.6c3.1,2.4,4.7,6,4.7,10.7c0,2.1-0.4,4-1.1,5.7c-0.7,1.7-1.8,3.2-3.1,4.5c-1.3,1.3-3,2.3-4.8,3.2 c-1.5,0.6-3.1,1.1-4.9,1.4c0.2,0.2,0.4,0.4,0.6,0.7L325,78.2z M296.9,53.5c1.1,0,3.4,0.1,4,0.4c0.6,0.3,1.1,0.7,1.6,1.3l16.6,21 c0.2,0.3,0.4,0.5,0.6,0.6c0.2,0.1,0.4,0.2,0.7,0.2h2l-17.1-21.4c-0.4-0.6-0.9-1-1.4-1.3l-1.5-0.9l1.8-0.2c2.2-0.2,4.2-0.7,5.9-1.5 c1.7-0.8,3.2-1.7,4.5-2.9c1.2-1.2,2.2-2.5,2.8-4.1c0.6-1.6,1-3.3,1-5.2c0-4.3-1.4-7.5-4.2-9.7c-2.8-2.2-7.2-3.3-13-3.3h-12.6V77 h2.5V28h10.1c4.7,0,8.4,0.9,10.9,2.8c2.6,1.9,3.9,4.8,3.9,8.7c0,1.9-0.4,3.6-1,5.1c-0.7,1.5-1.7,2.8-3.1,3.9 c-1.3,1.1-2.9,1.9-4.8,2.5c-1.9,0.6-4,0.9-6.4,0.9l-2.2,0c-0.1,0-0.2,0-0.9,0C297.3,51.9,297,51.9,296.9,53.5z" /> </g> <g> <path class="st1" d="M367.6,68.8c0.2,0,0.5,0.1,0.6,0.3l1.5,1.6c-1.1,1.1-2.2,2.2-3.5,3.1c-1.3,0.9-2.7,1.7-4.2,2.3 c-1.5,0.6-3.2,1.1-4.9,1.5c-1.8,0.4-3.8,0.5-5.9,0.5c-3.6,0-6.9-0.6-9.9-1.9c-3-1.3-5.6-3-7.7-5.4c-2.1-2.3-3.8-5.1-5-8.4 c-1.2-3.3-1.8-6.9-1.8-10.9c0-3.9,0.6-7.5,1.9-10.8c1.2-3.3,3-6,5.2-8.4c2.2-2.3,4.9-4.1,8-5.4c3.1-1.3,6.6-1.9,10.3-1.9 c1.9,0,3.6,0.1,5.2,0.4c1.6,0.3,3,0.7,4.4,1.2c1.4,0.5,2.6,1.2,3.8,2c1.2,0.8,2.4,1.7,3.5,2.7l-1.1,1.6c-0.2,0.3-0.5,0.4-0.9,0.4 c-0.2,0-0.5-0.1-0.8-0.4c-0.3-0.3-0.8-0.6-1.3-1c-0.5-0.4-1.2-0.8-1.9-1.2c-0.7-0.5-1.6-0.9-2.7-1.2c-1-0.4-2.2-0.7-3.6-1 c-1.3-0.3-2.9-0.4-4.6-0.4c-3.2,0-6.1,0.5-8.7,1.6c-2.6,1.1-4.9,2.6-6.8,4.7c-1.9,2-3.4,4.5-4.5,7.3s-1.6,6.1-1.6,9.7 c0,3.7,0.5,6.9,1.6,9.8c1.1,2.9,2.5,5.3,4.4,7.3c1.9,2,4.1,3.5,6.6,4.6c2.5,1.1,5.3,1.6,8.2,1.6c1.9,0,3.5-0.1,5-0.4 c1.5-0.2,2.8-0.6,4-1.1c1.2-0.5,2.4-1.1,3.4-1.8c1.1-0.7,2.1-1.5,3.1-2.5c0.1-0.1,0.2-0.2,0.3-0.2 C367.3,68.9,367.5,68.8,367.6,68.8z" /> <path class="st2" d="M351.1,78.8c-3.7,0-7.1-0.7-10.1-1.9c-3.1-1.3-5.7-3.1-7.9-5.5c-2.2-2.4-3.9-5.2-5.1-8.6 c-1.2-3.3-1.8-7.1-1.8-11.1c0-4,0.6-7.7,1.9-11c1.3-3.3,3.1-6.2,5.3-8.6c2.3-2.4,5.1-4.3,8.2-5.6c3.2-1.3,6.7-2,10.6-2 c1.9,0,3.7,0.1,5.3,0.4c1.6,0.3,3.1,0.7,4.5,1.2c1.4,0.5,2.7,1.2,3.9,2c1.2,0.8,2.4,1.7,3.6,2.8l0.4,0.4l-1.4,2.1 c-0.2,0.3-0.6,0.7-1.4,0.7c-0.4,0-0.7-0.2-1.2-0.5c-0.3-0.3-0.8-0.6-1.3-0.9c-0.5-0.4-1.1-0.8-1.9-1.2c-0.7-0.4-1.6-0.8-2.6-1.2 c-1-0.4-2.2-0.7-3.5-0.9c-1.3-0.2-2.8-0.4-4.5-0.4c-3.1,0-5.9,0.5-8.5,1.6c-2.5,1.1-4.8,2.6-6.6,4.5c-1.8,1.9-3.3,4.3-4.3,7.1 c-1,2.8-1.6,6-1.6,9.4c0,3.6,0.5,6.8,1.5,9.6c1,2.8,2.4,5.2,4.2,7.1c1.8,1.9,3.9,3.4,6.4,4.4c2.4,1,5.1,1.5,8,1.5 c1.8,0,3.5-0.1,4.9-0.4c1.4-0.2,2.7-0.6,3.9-1.1c1.2-0.5,2.3-1.1,3.3-1.7c1-0.7,2-1.5,3-2.4c0.2-0.2,0.3-0.2,0.5-0.3 c0.5-0.3,1.3-0.2,1.7,0.3l1.9,2l-0.4,0.4c-1.1,1.2-2.3,2.2-3.6,3.2c-1.3,0.9-2.7,1.8-4.3,2.4c-1.5,0.7-3.2,1.2-5.1,1.5 C355.3,78.6,353.3,78.8,351.1,78.8z M352.2,25.7c-3.7,0-7.1,0.6-10.1,1.9c-3,1.2-5.7,3-7.8,5.3c-2.2,2.3-3.9,5-5.1,8.2 c-1.2,3.2-1.8,6.7-1.8,10.6c0,3.9,0.6,7.5,1.8,10.7c1.2,3.2,2.8,5.9,4.9,8.2c2.1,2.2,4.6,4,7.5,5.2c2.9,1.2,6.1,1.8,9.6,1.8 c2.1,0,4-0.2,5.8-0.5c1.7-0.3,3.4-0.8,4.8-1.5c1.5-0.6,2.8-1.4,4-2.3c1.1-0.8,2.1-1.7,3-2.6l-1.1-1.2c-0.1-0.1-0.2-0.1-0.3,0 c-0.1,0-0.2,0.1-0.3,0.2c-1,0.9-2.1,1.8-3.2,2.5c-1.1,0.7-2.3,1.4-3.5,1.9c-1.3,0.5-2.7,0.9-4.1,1.1c-1.5,0.2-3.2,0.4-5.1,0.4 c-3,0-5.9-0.6-8.5-1.6c-2.6-1.1-4.9-2.7-6.8-4.7c-1.9-2-3.4-4.6-4.5-7.5c-1.1-2.9-1.6-6.3-1.6-10c0-3.6,0.5-6.9,1.6-9.9 c1.1-2.9,2.6-5.5,4.6-7.5c2-2.1,4.3-3.7,7-4.8c2.7-1.1,5.7-1.7,8.9-1.7c1.7,0,3.3,0.1,4.7,0.4c1.4,0.3,2.6,0.6,3.7,1 c1.1,0.4,2,0.8,2.8,1.3c0.8,0.5,1.4,0.9,1.9,1.3c0.5,0.4,1,0.7,1.3,1c0.3,0.3,0.5,0.3,0.5,0.3c0.3,0,0.4-0.1,0.4-0.2l0.8-1.2 c-1-0.9-2-1.6-3-2.3c-1.2-0.8-2.4-1.4-3.7-1.9c-1.3-0.5-2.8-0.9-4.3-1.2C355.7,25.9,354,25.7,352.2,25.7z" /> </g> <g> <path class="st1" d="M410.3,25.7v3.1H383v21h22.7v3H383v21.6h27.3v3.1h-31.1V25.7H410.3z" /> <path class="st2" d="M410.9,78.2h-32.3V25.1h32.3v4.3h-27.3v19.7h22.7v4.3h-22.7v20.4h27.3V78.2z M379.8,77h29.9v-1.9h-27.3V52.2 h22.7v-1.8h-22.7V28.2h27.3v-1.9h-29.9V77z" /> </g> <g> <path class="st1" d="M456.8,25.1V33h-23.5v15.7h19.8v7.9h-19.8v21.6h-9.9v-53H456.8z" /> </g> <g> <path class="st1" d="M514.3,51.6c0,3.9-0.6,7.5-1.9,10.8c-1.3,3.3-3.1,6.2-5.5,8.6c-2.3,2.4-5.2,4.3-8.5,5.7c-3.3,1.4-7,2-11,2 c-4,0-7.7-0.7-11-2c-3.3-1.4-6.1-3.2-8.5-5.7c-2.4-2.4-4.2-5.3-5.5-8.6s-1.9-6.9-1.9-10.8s0.6-7.5,1.9-10.8 c1.3-3.3,3.1-6.2,5.5-8.6c2.4-2.4,5.2-4.3,8.5-5.7c3.3-1.4,7-2,11-2c4,0,7.7,0.7,11,2.1c3.3,1.4,6.1,3.3,8.5,5.7 c2.3,2.4,4.2,5.3,5.5,8.6C513.6,44.1,514.3,47.7,514.3,51.6z M504.2,51.6c0-2.9-0.4-5.5-1.2-7.8c-0.8-2.3-1.9-4.3-3.3-5.9 c-1.4-1.6-3.2-2.8-5.3-3.7c-2.1-0.9-4.4-1.3-7-1.3c-2.6,0-4.9,0.4-7,1.3c-2.1,0.9-3.8,2.1-5.3,3.7c-1.5,1.6-2.6,3.6-3.4,5.9 c-0.8,2.3-1.2,4.9-1.2,7.8s0.4,5.5,1.2,7.8c0.8,2.3,1.9,4.3,3.4,5.9c1.5,1.6,3.2,2.8,5.3,3.7c2.1,0.9,4.4,1.3,7,1.3 c2.6,0,4.9-0.4,7-1.3c2.1-0.9,3.8-2.1,5.3-3.7c1.4-1.6,2.5-3.6,3.3-5.9C503.8,57.1,504.2,54.5,504.2,51.6z" /> </g> <g> <path class="st1" d="M534.9,50.4l2.3,0c1.9,0,3.5-0.2,4.9-0.7c1.4-0.5,2.5-1.1,3.4-1.9c0.9-0.8,1.6-1.8,2-2.9 c0.4-1.1,0.7-2.4,0.7-3.7c0-2.7-0.9-4.8-2.7-6.2c-1.8-1.4-4.5-2.2-8.1-2.2H531v17.6v7.1v20.7h-9.9v-53h16.2c3.6,0,6.7,0.4,9.3,1.1 c2.6,0.7,4.7,1.8,6.3,3.1c1.6,1.3,2.9,3,3.6,4.8c0.8,1.9,1.2,3.9,1.2,6.2c0,1.8-0.3,3.5-0.8,5.1c-0.5,1.6-1.3,3-2.3,4.3 c-1,1.3-2.2,2.4-3.7,3.4c-1.5,1-3.1,1.8-5,2.3c1.2,0.7,2.3,1.7,3.2,3l13.3,19.6h-8.9c-0.9,0-1.6-0.2-2.2-0.5 c-0.6-0.3-1.1-0.8-1.5-1.5c0,0-11.1-17-11.1-17c-0.3-0.4-0.9-1.3-1.5-1.4c-1.2,0-2.4,0-3.5,0c0,0,0-6,0-6.4 C533.8,50.4,534.9,50.4,534.9,50.4z" /> </g> <g> <path class="st1" d="M591.4,70.9c2.2,0,4.2-0.2,5.8-0.6c1.6-0.4,3.2-1,4.7-1.7v-12h-6.6c-0.6,0-1.1-0.2-1.5-0.5 c-0.4-0.4-0.6-0.8-0.6-1.3v-5.6h17.6V73c-1.3,1-2.7,1.8-4.2,2.5c-1.5,0.7-3,1.3-4.7,1.8c-1.7,0.5-3.4,0.8-5.3,1 c-1.9,0.2-3.9,0.3-6.1,0.3c-3.9,0-7.4-0.7-10.7-2c-3.3-1.3-6.1-3.2-8.4-5.6c-2.4-2.4-4.2-5.3-5.6-8.6c-1.3-3.3-2-7-2-10.9 c0-4,0.6-7.6,1.9-11c1.3-3.3,3.1-6.2,5.5-8.6c2.4-2.4,5.3-4.3,8.7-5.6c3.4-1.3,7.2-2,11.4-2c4.3,0,8.1,0.6,11.2,1.9 c3.2,1.3,5.8,3,8,5l-2.9,4.5c-0.6,0.9-1.3,1.4-2.2,1.4c-0.6,0-1.2-0.2-1.8-0.6c-0.8-0.5-1.6-0.9-2.4-1.4c-0.8-0.5-1.7-0.9-2.7-1.2 c-1-0.3-2.1-0.6-3.3-0.8c-1.2-0.2-2.7-0.3-4.3-0.3c-2.6,0-5,0.4-7.1,1.3c-2.1,0.9-3.9,2.1-5.4,3.8c-1.5,1.6-2.6,3.6-3.4,5.9 c-0.8,2.3-1.2,4.9-1.2,7.7c0,3.1,0.4,5.8,1.3,8.2c0.9,2.4,2.1,4.4,3.6,6s3.4,2.9,5.5,3.8S588.9,70.9,591.4,70.9z" /> </g> <g> <path class="st1" d="M645.7,56.8h-16.1v13.4H653v7.9h-33.4v-53H653V33h-23.5v16.3H648v5.8C648,55.1,647.9,56.8,645.7,56.8z" /> </g></g></svg>
+</a>
+<nav class="links">
+<a href="/software/vendors/new" rel="nofollow" title="Add a Commercial Product">Add a Product</a>
+<a href="/support" title="Help">Help</a>
+<a href="/user/registration_business" title="Join">Join</a>
+<a href="https://sourceforge.net/auth/" title="Login">Login</a>
+</nav>
+</div>
+</section>
+<div class="l-header-nav sticky sandiego l-header-nav-collapse">
+<section class="sandiego l-header-nav-top hide-for-large">
+<div class="row">
+<a href="/" title="Home" class="sf-logo">
+<svg data-name="sf-logo-full" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 653 102.6" style="enable-background:new 0 0 653 102.6;" xml:space="preserve"><path class="st0" d="M66.9,54.5c0-19.1-6.8-27.8-10.4-31.1c-0.7-0.6-1.8-0.1-1.7,0.9c0.7,10.8-12.9,13.5-12.9,30.4h0 c0,0,0,0.1,0,0.1c0,10.3,7.8,18.7,17.4,18.7c9.6,0,17.4-8.4,17.4-18.7c0,0,0-0.1,0-0.1h0c0-4.8-1.8-9.4-3.6-12.8 c-0.4-0.7-1.4-0.4-1.3,0.2C75.1,56.7,66.9,65.7,66.9,54.5z" /><g> <path class="st0" d="M46.2,94.8c-0.4,0-0.9-0.2-1.2-0.5L0.5,49.8c-0.6-0.6-0.6-1.7,0-2.4l47-47C47.8,0.2,48.2,0,48.6,0h13.5 c0.8,0,1.3,0.5,1.5,1c0.2,0.5,0.2,1.2-0.4,1.8L19.1,47c-0.9,0.9-0.9,2.3,0,3.2L54,85.2c0.6,0.6,0.6,1.7,0,2.4l-6.7,6.8 C47,94.6,46.6,94.8,46.2,94.8z" /></g><g> <path class="st0" d="M55.1,102.6c-0.8,0-1.3-0.5-1.5-1c-0.2-0.5-0.2-1.2,0.4-1.8l44.2-44.2c0.4-0.4,0.7-1,0.7-1.6 c0-0.6-0.2-1.2-0.7-1.6L63.2,17.4c-0.6-0.6-0.6-1.7,0-2.4l6.8-6.8c0.3-0.3,0.7-0.5,1.2-0.5S72,8,72.3,8.3l44.4,44.5 c0.3,0.3,0.5,0.7,0.5,1.2s-0.2,0.9-0.5,1.2l-47,47c-0.3,0.3-0.7,0.5-1.2,0.5H55.1z" /></g><g> <g> <path class="st1" d="M167.2,32c-0.2,0.4-0.5,0.6-1,0.6c-0.3,0-0.7-0.2-1.2-0.7c-0.5-0.5-1.2-1-2-1.5c-0.9-0.6-1.9-1.1-3.2-1.5 c-1.3-0.5-2.9-0.7-4.8-0.7c-1.9,0-3.5,0.3-5,0.8c-1.4,0.5-2.6,1.3-3.6,2.2s-1.7,2-2.2,3.2c-0.5,1.2-0.8,2.5-0.8,3.8 c0,1.8,0.4,3.2,1.1,4.4c0.7,1.1,1.7,2.1,3,2.9c1.2,0.8,2.6,1.5,4.2,2c1.6,0.6,3.2,1.1,4.8,1.6c1.6,0.5,3.2,1.1,4.8,1.8 c1.6,0.6,2.9,1.5,4.2,2.4s2.2,2.2,3,3.6c0.7,1.4,1.1,3.2,1.1,5.3c0,2.2-0.4,4.2-1.1,6.1c-0.7,1.9-1.8,3.6-3.2,5 c-1.4,1.4-3.2,2.5-5.2,3.4c-2.1,0.8-4.4,1.2-7,1.2c-3.4,0-6.4-0.6-8.8-1.8c-2.5-1.2-4.6-2.9-6.5-5l1-1.6c0.3-0.4,0.6-0.5,1-0.5 c0.2,0,0.5,0.1,0.8,0.4c0.3,0.3,0.8,0.7,1.2,1.1c0.5,0.4,1.1,0.9,1.8,1.4c0.7,0.5,1.5,1,2.4,1.4c0.9,0.4,1.9,0.8,3.1,1.1 c1.2,0.3,2.5,0.4,4,0.4c2.1,0,3.9-0.3,5.5-0.9c1.6-0.6,3-1.5,4.1-2.5s2-2.4,2.6-3.8c0.6-1.5,0.9-3.1,0.9-4.7 c0-1.8-0.4-3.3-1.1-4.5c-0.7-1.2-1.7-2.2-3-3c-1.2-0.8-2.6-1.5-4.2-2c-1.6-0.5-3.2-1.1-4.8-1.6c-1.6-0.5-3.2-1.1-4.8-1.7 c-1.6-0.6-2.9-1.4-4.2-2.4c-1.2-1-2.2-2.2-3-3.7c-0.7-1.5-1.1-3.3-1.1-5.6c0-1.7,0.3-3.4,1-5c0.7-1.6,1.6-3,2.9-4.3 c1.3-1.2,2.8-2.2,4.7-3c1.9-0.7,4-1.1,6.4-1.1c2.7,0,5.1,0.4,7.3,1.3c2.1,0.9,4.1,2.2,5.9,3.9L167.2,32z" /> <path class="st2" d="M152.9,78.8c-3.5,0-6.6-0.6-9.1-1.9c-2.5-1.2-4.8-3-6.7-5.1l-0.3-0.3l1.3-2c0.6-0.7,1.1-0.8,1.5-0.8 c0.4,0,0.8,0.2,1.2,0.6c0.3,0.3,0.8,0.7,1.3,1.1c0.5,0.4,1.1,0.9,1.7,1.4c0.7,0.5,1.4,0.9,2.3,1.3c0.9,0.4,1.9,0.8,3,1 c1.1,0.3,2.4,0.4,3.9,0.4c2,0,3.8-0.3,5.3-0.9c1.5-0.6,2.8-1.4,3.9-2.4c1-1,1.9-2.2,2.4-3.6c0.6-1.4,0.8-2.9,0.8-4.5 c0-1.7-0.3-3.1-1-4.2c-0.7-1.1-1.6-2-2.8-2.8c-1.2-0.8-2.5-1.4-4-1.9c-1.5-0.5-3.1-1.1-4.8-1.6c-1.7-0.5-3.3-1.1-4.8-1.7 c-1.6-0.7-3.1-1.5-4.3-2.5c-1.3-1-2.3-2.4-3.1-3.9c-0.8-1.6-1.2-3.5-1.2-5.8c0-1.8,0.3-3.6,1-5.3c0.7-1.7,1.7-3.2,3-4.5 c1.3-1.3,3-2.3,4.9-3.1c1.9-0.8,4.2-1.2,6.6-1.2c2.8,0,5.3,0.4,7.5,1.3c2.2,0.9,4.2,2.3,6.1,4.1l0.3,0.3l-1.1,2.1 c-0.6,1.1-1.7,1.4-3.1,0.1c-0.5-0.4-1.1-0.9-2-1.4c-0.8-0.5-1.9-1-3.1-1.5c-1.2-0.4-2.7-0.7-4.6-0.7c-1.8,0-3.4,0.3-4.8,0.8 c-1.3,0.5-2.5,1.2-3.4,2.1c-0.9,0.9-1.6,1.9-2.1,3c-0.5,1.1-0.7,2.4-0.7,3.6c0,1.6,0.3,3,1,4c0.7,1.1,1.6,2,2.8,2.8 c1.2,0.8,2.5,1.4,4,2c1.5,0.5,3.1,1.1,4.8,1.6c1.6,0.5,3.3,1.1,4.8,1.8c1.6,0.7,3.1,1.5,4.3,2.5c1.3,1,2.3,2.3,3.1,3.8 c0.8,1.5,1.2,3.4,1.2,5.6c0,2.2-0.4,4.4-1.2,6.4c-0.8,2-1.9,3.7-3.4,5.2c-1.5,1.5-3.3,2.6-5.4,3.5 C158.1,78.3,155.6,78.8,152.9,78.8z M138.4,71.3c1.7,1.9,3.7,3.4,6,4.5c2.4,1.2,5.3,1.8,8.6,1.8c2.5,0,4.8-0.4,6.8-1.2 c2-0.8,3.6-1.9,5-3.2c1.3-1.3,2.4-3,3.1-4.8c0.7-1.8,1.1-3.8,1.1-5.9c0-2-0.4-3.7-1-5.1c-0.7-1.3-1.6-2.5-2.8-3.4 c-1.2-0.9-2.5-1.7-4-2.4c-1.5-0.6-3.1-1.2-4.7-1.8c-1.6-0.5-3.2-1.1-4.8-1.6c-1.6-0.6-3-1.3-4.3-2.1c-1.3-0.8-2.3-1.9-3.1-3.1 c-0.8-1.2-1.2-2.8-1.2-4.7c0-1.4,0.3-2.8,0.8-4.1c0.5-1.3,1.3-2.5,2.3-3.4c1-1,2.3-1.8,3.8-2.3c1.5-0.6,3.3-0.8,5.2-0.8 c1.9,0,3.6,0.2,5,0.7c1.3,0.5,2.5,1,3.3,1.6c0.9,0.6,1.6,1.1,2.1,1.6c0.6,0.5,0.8,0.5,0.8,0.5c0.1,0,0.3,0,0.4-0.3l0.7-1.3 c-1.6-1.5-3.4-2.7-5.3-3.5c-2.1-0.8-4.4-1.2-7-1.2c-2.3,0-4.4,0.4-6.2,1.1c-1.8,0.7-3.3,1.7-4.5,2.8c-1.2,1.2-2.1,2.5-2.8,4.1 c-0.6,1.5-0.9,3.1-0.9,4.8c0,2.1,0.4,3.9,1.1,5.3c0.7,1.4,1.6,2.6,2.8,3.5c1.2,0.9,2.5,1.7,4,2.3c1.5,0.6,3.1,1.2,4.7,1.7 c1.6,0.5,3.2,1,4.8,1.6c1.6,0.6,3,1.2,4.3,2.1c1.3,0.8,2.4,1.9,3.1,3.2c0.8,1.3,1.2,2.9,1.2,4.9c0,1.8-0.3,3.4-0.9,5 c-0.6,1.6-1.5,2.9-2.7,4c-1.2,1.1-2.6,2-4.3,2.7c-1.7,0.6-3.6,1-5.7,1c-1.5,0-2.9-0.2-4.2-0.5c-1.2-0.3-2.3-0.7-3.2-1.1 c-0.9-0.4-1.8-0.9-2.5-1.5c-0.7-0.5-1.3-1-1.8-1.4c-0.5-0.4-0.9-0.8-1.2-1.1c-0.3-0.3-0.5-0.3-0.5-0.3c-0.1,0-0.3,0-0.5,0.3 L138.4,71.3z" /> </g> <g> <path class="st1" d="M226.7,51.6c0,4-0.6,7.6-1.8,10.9c-1.2,3.3-2.9,6.1-5.1,8.4c-2.2,2.3-4.8,4.1-7.8,5.4 c-3,1.3-6.4,1.9-10.1,1.9c-3.6,0-7-0.6-10-1.9c-3-1.3-5.6-3-7.8-5.4c-2.2-2.3-3.9-5.1-5.1-8.4c-1.2-3.3-1.8-6.9-1.8-10.9 c0-4,0.6-7.6,1.8-10.9c1.2-3.3,2.9-6.1,5.1-8.4c2.2-2.3,4.8-4.1,7.8-5.4c3-1.3,6.4-1.9,10-1.9c3.7,0,7.1,0.6,10.1,1.9 c3,1.3,5.6,3,7.8,5.4c2.2,2.3,3.9,5.1,5.1,8.4C226.1,44,226.7,47.6,226.7,51.6z M222.8,51.6c0-3.6-0.5-6.9-1.5-9.8 c-1-2.9-2.4-5.3-4.2-7.3c-1.8-2-4-3.5-6.6-4.6c-2.6-1.1-5.4-1.6-8.5-1.6c-3.1,0-5.9,0.5-8.5,1.6c-2.6,1.1-4.8,2.6-6.6,4.6 c-1.8,2-3.3,4.4-4.3,7.3c-1,2.9-1.5,6.1-1.5,9.8c0,3.6,0.5,6.9,1.5,9.8c1,2.9,2.4,5.3,4.3,7.3c1.8,2,4,3.5,6.6,4.6 c2.6,1.1,5.4,1.6,8.5,1.6c3.1,0,6-0.5,8.5-1.6c2.6-1,4.8-2.6,6.6-4.6c1.8-2,3.2-4.4,4.2-7.3C222.3,58.5,222.8,55.3,222.8,51.6z" /> <path class="st2" d="M202,78.7c-3.7,0-7.2-0.7-10.2-1.9c-3.1-1.3-5.8-3.1-8-5.5c-2.2-2.4-4-5.2-5.2-8.6c-1.2-3.3-1.9-7.1-1.9-11.1 c0-4,0.6-7.8,1.9-11.1c1.2-3.3,3-6.2,5.2-8.6c2.2-2.4,4.9-4.2,8-5.5c3.1-1.3,6.5-2,10.2-2c3.8,0,7.2,0.7,10.3,1.9 c3.1,1.3,5.8,3.1,8,5.5c2.2,2.4,4,5.3,5.2,8.6c1.2,3.3,1.8,7,1.8,11.1c0,4.1-0.6,7.8-1.8,11.1c-1.2,3.3-3,6.2-5.2,8.6 c-2.2,2.4-4.9,4.2-8,5.5C209.2,78.1,205.7,78.7,202,78.7z M202,25.7c-3.5,0-6.8,0.6-9.8,1.9c-2.9,1.2-5.5,3-7.6,5.2 c-2.1,2.2-3.8,5-4.9,8.2c-1.2,3.2-1.8,6.8-1.8,10.7c0,3.9,0.6,7.5,1.8,10.7c1.2,3.2,2.8,5.9,4.9,8.2c2.1,2.2,4.7,4,7.6,5.2 c2.9,1.2,6.2,1.8,9.8,1.8c3.6,0,6.9-0.6,9.8-1.8c2.9-1.2,5.5-3,7.6-5.2c2.1-2.2,3.8-5,4.9-8.1c1.2-3.2,1.8-6.8,1.8-10.7 c0-3.9-0.6-7.5-1.8-10.7c-1.2-3.2-2.8-5.9-4.9-8.2c-2.1-2.2-4.7-4-7.6-5.2C208.9,26.3,205.6,25.7,202,25.7z" /> </g> <g> <path class="st1" d="M256.4,74.9c2.5,0,4.7-0.4,6.7-1.3c2-0.9,3.6-2.1,5-3.6c1.4-1.5,2.4-3.4,3.1-5.4c0.7-2.1,1.1-4.3,1.1-6.8 V25.7h3.7v32.1c0,2.9-0.5,5.5-1.4,8c-0.9,2.5-2.2,4.6-3.9,6.5c-1.7,1.8-3.8,3.3-6.2,4.3c-2.4,1-5.2,1.6-8.2,1.6 c-3,0-5.8-0.5-8.2-1.6c-2.4-1.1-4.5-2.5-6.2-4.3c-1.7-1.8-3-4-3.9-6.5c-0.9-2.5-1.4-5.2-1.4-8V25.7h3.8v32c0,2.4,0.4,4.7,1.1,6.8 c0.7,2.1,1.8,3.9,3.1,5.4c1.4,1.5,3,2.7,5,3.6C251.6,74.5,253.9,74.9,256.4,74.9z" /> <path class="st2" d="M256.4,78.8c-3.1,0-5.9-0.5-8.4-1.6c-2.5-1.1-4.7-2.6-6.4-4.5c-1.7-1.9-3.1-4.2-4-6.7 c-0.9-2.5-1.4-5.3-1.4-8.2V25.1h5v32.7c0,2.3,0.4,4.5,1,6.6c0.7,2,1.7,3.8,3,5.2c1.3,1.5,2.9,2.6,4.8,3.5c1.9,0.8,4,1.3,6.4,1.3 c2.4,0,4.6-0.4,6.4-1.2c1.9-0.8,3.5-2,4.8-3.5c1.3-1.5,2.3-3.2,3-5.2c0.7-2,1-4.2,1-6.6V25.1h5v32.7c0,2.9-0.5,5.7-1.4,8.2 c-0.9,2.5-2.3,4.8-4,6.7c-1.7,1.9-3.9,3.4-6.4,4.5C262.3,78.3,259.5,78.8,256.4,78.8z M237.3,26.3v31.5c0,2.8,0.4,5.4,1.3,7.8 c0.9,2.4,2.1,4.5,3.8,6.3c1.6,1.8,3.6,3.2,6,4.2c2.3,1,5,1.5,8,1.5c2.9,0,5.6-0.5,8-1.5c2.3-1,4.4-2.4,6-4.2 c1.6-1.8,2.9-3.9,3.8-6.3c0.9-2.4,1.3-5,1.3-7.8V26.3h-2.5v31.5c0,2.5-0.4,4.8-1.1,7c-0.7,2.2-1.8,4.1-3.3,5.7 c-1.4,1.6-3.2,2.9-5.2,3.8c-2,0.9-4.4,1.4-6.9,1.4c-2.6,0-4.9-0.5-6.9-1.4c-2-0.9-3.8-2.2-5.2-3.8c-1.4-1.6-2.5-3.5-3.2-5.7 c-0.7-2.1-1.1-4.5-1.1-7V26.3H237.3z" /> </g> <g> <path class="st1" d="M297.5,51.3c1,0,0.9,0,0.9,0l2.2,0c2.3,0,4.4-0.3,6.2-0.8c1.8-0.6,3.4-1.3,4.6-2.4c1.3-1,2.2-2.3,2.9-3.7 c0.7-1.4,1-3.1,1-4.9c0-3.7-1.2-6.4-3.6-8.2c-2.4-1.8-5.9-2.7-10.6-2.7h-9.5v22.7v2.8v23.5h-3.7V25.7h13.2c6,0,10.5,1.2,13.4,3.5 c3,2.3,4.4,5.7,4.4,10.2c0,2-0.3,3.8-1,5.4c-0.7,1.6-1.7,3.1-3,4.3c-1.3,1.2-2.8,2.3-4.6,3c-1.8,0.8-3.9,1.3-6.1,1.6 c0.6,0.4,1.1,0.9,1.6,1.5l17.9,22.4h-3.3c-0.4,0-0.7-0.1-1-0.2c-0.3-0.1-0.6-0.4-0.8-0.7l-16.6-21c-0.4-0.5-0.9-0.9-1.3-1.1 c-0.5-0.2-3.4-0.3-4.4-0.3C296.3,51.6,296.7,51.3,297.5,51.3z" /> <path class="st2" d="M325,78.2h-4.5c-0.5,0-0.9-0.1-1.3-0.3c-0.4-0.2-0.7-0.5-1-0.9l-16.6-21c-0.4-0.5-0.7-0.8-1.1-1 c-0.4-0.1-2.8-0.3-4.1-0.3h-0.6v-2.6c0-0.9,0.2-1.4,1.8-1.4c0.9,0,1,0,1,0l2.2,0c2.2,0,4.2-0.3,6-0.8c1.7-0.5,3.2-1.3,4.4-2.3 c1.2-1,2.1-2.1,2.7-3.5c0.6-1.4,0.9-2.9,0.9-4.6c0-3.5-1.1-6-3.4-7.7c-2.3-1.7-5.7-2.6-10.2-2.6h-8.9v48.9h-5V25.1h13.9 c6.1,0,10.7,1.2,13.8,3.6c3.1,2.4,4.7,6,4.7,10.7c0,2.1-0.4,4-1.1,5.7c-0.7,1.7-1.8,3.2-3.1,4.5c-1.3,1.3-3,2.3-4.8,3.2 c-1.5,0.6-3.1,1.1-4.9,1.4c0.2,0.2,0.4,0.4,0.6,0.7L325,78.2z M296.9,53.5c1.1,0,3.4,0.1,4,0.4c0.6,0.3,1.1,0.7,1.6,1.3l16.6,21 c0.2,0.3,0.4,0.5,0.6,0.6c0.2,0.1,0.4,0.2,0.7,0.2h2l-17.1-21.4c-0.4-0.6-0.9-1-1.4-1.3l-1.5-0.9l1.8-0.2c2.2-0.2,4.2-0.7,5.9-1.5 c1.7-0.8,3.2-1.7,4.5-2.9c1.2-1.2,2.2-2.5,2.8-4.1c0.6-1.6,1-3.3,1-5.2c0-4.3-1.4-7.5-4.2-9.7c-2.8-2.2-7.2-3.3-13-3.3h-12.6V77 h2.5V28h10.1c4.7,0,8.4,0.9,10.9,2.8c2.6,1.9,3.9,4.8,3.9,8.7c0,1.9-0.4,3.6-1,5.1c-0.7,1.5-1.7,2.8-3.1,3.9 c-1.3,1.1-2.9,1.9-4.8,2.5c-1.9,0.6-4,0.9-6.4,0.9l-2.2,0c-0.1,0-0.2,0-0.9,0C297.3,51.9,297,51.9,296.9,53.5z" /> </g> <g> <path class="st1" d="M367.6,68.8c0.2,0,0.5,0.1,0.6,0.3l1.5,1.6c-1.1,1.1-2.2,2.2-3.5,3.1c-1.3,0.9-2.7,1.7-4.2,2.3 c-1.5,0.6-3.2,1.1-4.9,1.5c-1.8,0.4-3.8,0.5-5.9,0.5c-3.6,0-6.9-0.6-9.9-1.9c-3-1.3-5.6-3-7.7-5.4c-2.1-2.3-3.8-5.1-5-8.4 c-1.2-3.3-1.8-6.9-1.8-10.9c0-3.9,0.6-7.5,1.9-10.8c1.2-3.3,3-6,5.2-8.4c2.2-2.3,4.9-4.1,8-5.4c3.1-1.3,6.6-1.9,10.3-1.9 c1.9,0,3.6,0.1,5.2,0.4c1.6,0.3,3,0.7,4.4,1.2c1.4,0.5,2.6,1.2,3.8,2c1.2,0.8,2.4,1.7,3.5,2.7l-1.1,1.6c-0.2,0.3-0.5,0.4-0.9,0.4 c-0.2,0-0.5-0.1-0.8-0.4c-0.3-0.3-0.8-0.6-1.3-1c-0.5-0.4-1.2-0.8-1.9-1.2c-0.7-0.5-1.6-0.9-2.7-1.2c-1-0.4-2.2-0.7-3.6-1 c-1.3-0.3-2.9-0.4-4.6-0.4c-3.2,0-6.1,0.5-8.7,1.6c-2.6,1.1-4.9,2.6-6.8,4.7c-1.9,2-3.4,4.5-4.5,7.3s-1.6,6.1-1.6,9.7 c0,3.7,0.5,6.9,1.6,9.8c1.1,2.9,2.5,5.3,4.4,7.3c1.9,2,4.1,3.5,6.6,4.6c2.5,1.1,5.3,1.6,8.2,1.6c1.9,0,3.5-0.1,5-0.4 c1.5-0.2,2.8-0.6,4-1.1c1.2-0.5,2.4-1.1,3.4-1.8c1.1-0.7,2.1-1.5,3.1-2.5c0.1-0.1,0.2-0.2,0.3-0.2 C367.3,68.9,367.5,68.8,367.6,68.8z" /> <path class="st2" d="M351.1,78.8c-3.7,0-7.1-0.7-10.1-1.9c-3.1-1.3-5.7-3.1-7.9-5.5c-2.2-2.4-3.9-5.2-5.1-8.6 c-1.2-3.3-1.8-7.1-1.8-11.1c0-4,0.6-7.7,1.9-11c1.3-3.3,3.1-6.2,5.3-8.6c2.3-2.4,5.1-4.3,8.2-5.6c3.2-1.3,6.7-2,10.6-2 c1.9,0,3.7,0.1,5.3,0.4c1.6,0.3,3.1,0.7,4.5,1.2c1.4,0.5,2.7,1.2,3.9,2c1.2,0.8,2.4,1.7,3.6,2.8l0.4,0.4l-1.4,2.1 c-0.2,0.3-0.6,0.7-1.4,0.7c-0.4,0-0.7-0.2-1.2-0.5c-0.3-0.3-0.8-0.6-1.3-0.9c-0.5-0.4-1.1-0.8-1.9-1.2c-0.7-0.4-1.6-0.8-2.6-1.2 c-1-0.4-2.2-0.7-3.5-0.9c-1.3-0.2-2.8-0.4-4.5-0.4c-3.1,0-5.9,0.5-8.5,1.6c-2.5,1.1-4.8,2.6-6.6,4.5c-1.8,1.9-3.3,4.3-4.3,7.1 c-1,2.8-1.6,6-1.6,9.4c0,3.6,0.5,6.8,1.5,9.6c1,2.8,2.4,5.2,4.2,7.1c1.8,1.9,3.9,3.4,6.4,4.4c2.4,1,5.1,1.5,8,1.5 c1.8,0,3.5-0.1,4.9-0.4c1.4-0.2,2.7-0.6,3.9-1.1c1.2-0.5,2.3-1.1,3.3-1.7c1-0.7,2-1.5,3-2.4c0.2-0.2,0.3-0.2,0.5-0.3 c0.5-0.3,1.3-0.2,1.7,0.3l1.9,2l-0.4,0.4c-1.1,1.2-2.3,2.2-3.6,3.2c-1.3,0.9-2.7,1.8-4.3,2.4c-1.5,0.7-3.2,1.2-5.1,1.5 C355.3,78.6,353.3,78.8,351.1,78.8z M352.2,25.7c-3.7,0-7.1,0.6-10.1,1.9c-3,1.2-5.7,3-7.8,5.3c-2.2,2.3-3.9,5-5.1,8.2 c-1.2,3.2-1.8,6.7-1.8,10.6c0,3.9,0.6,7.5,1.8,10.7c1.2,3.2,2.8,5.9,4.9,8.2c2.1,2.2,4.6,4,7.5,5.2c2.9,1.2,6.1,1.8,9.6,1.8 c2.1,0,4-0.2,5.8-0.5c1.7-0.3,3.4-0.8,4.8-1.5c1.5-0.6,2.8-1.4,4-2.3c1.1-0.8,2.1-1.7,3-2.6l-1.1-1.2c-0.1-0.1-0.2-0.1-0.3,0 c-0.1,0-0.2,0.1-0.3,0.2c-1,0.9-2.1,1.8-3.2,2.5c-1.1,0.7-2.3,1.4-3.5,1.9c-1.3,0.5-2.7,0.9-4.1,1.1c-1.5,0.2-3.2,0.4-5.1,0.4 c-3,0-5.9-0.6-8.5-1.6c-2.6-1.1-4.9-2.7-6.8-4.7c-1.9-2-3.4-4.6-4.5-7.5c-1.1-2.9-1.6-6.3-1.6-10c0-3.6,0.5-6.9,1.6-9.9 c1.1-2.9,2.6-5.5,4.6-7.5c2-2.1,4.3-3.7,7-4.8c2.7-1.1,5.7-1.7,8.9-1.7c1.7,0,3.3,0.1,4.7,0.4c1.4,0.3,2.6,0.6,3.7,1 c1.1,0.4,2,0.8,2.8,1.3c0.8,0.5,1.4,0.9,1.9,1.3c0.5,0.4,1,0.7,1.3,1c0.3,0.3,0.5,0.3,0.5,0.3c0.3,0,0.4-0.1,0.4-0.2l0.8-1.2 c-1-0.9-2-1.6-3-2.3c-1.2-0.8-2.4-1.4-3.7-1.9c-1.3-0.5-2.8-0.9-4.3-1.2C355.7,25.9,354,25.7,352.2,25.7z" /> </g> <g> <path class="st1" d="M410.3,25.7v3.1H383v21h22.7v3H383v21.6h27.3v3.1h-31.1V25.7H410.3z" /> <path class="st2" d="M410.9,78.2h-32.3V25.1h32.3v4.3h-27.3v19.7h22.7v4.3h-22.7v20.4h27.3V78.2z M379.8,77h29.9v-1.9h-27.3V52.2 h22.7v-1.8h-22.7V28.2h27.3v-1.9h-29.9V77z" /> </g> <g> <path class="st1" d="M456.8,25.1V33h-23.5v15.7h19.8v7.9h-19.8v21.6h-9.9v-53H456.8z" /> </g> <g> <path class="st1" d="M514.3,51.6c0,3.9-0.6,7.5-1.9,10.8c-1.3,3.3-3.1,6.2-5.5,8.6c-2.3,2.4-5.2,4.3-8.5,5.7c-3.3,1.4-7,2-11,2 c-4,0-7.7-0.7-11-2c-3.3-1.4-6.1-3.2-8.5-5.7c-2.4-2.4-4.2-5.3-5.5-8.6s-1.9-6.9-1.9-10.8s0.6-7.5,1.9-10.8 c1.3-3.3,3.1-6.2,5.5-8.6c2.4-2.4,5.2-4.3,8.5-5.7c3.3-1.4,7-2,11-2c4,0,7.7,0.7,11,2.1c3.3,1.4,6.1,3.3,8.5,5.7 c2.3,2.4,4.2,5.3,5.5,8.6C513.6,44.1,514.3,47.7,514.3,51.6z M504.2,51.6c0-2.9-0.4-5.5-1.2-7.8c-0.8-2.3-1.9-4.3-3.3-5.9 c-1.4-1.6-3.2-2.8-5.3-3.7c-2.1-0.9-4.4-1.3-7-1.3c-2.6,0-4.9,0.4-7,1.3c-2.1,0.9-3.8,2.1-5.3,3.7c-1.5,1.6-2.6,3.6-3.4,5.9 c-0.8,2.3-1.2,4.9-1.2,7.8s0.4,5.5,1.2,7.8c0.8,2.3,1.9,4.3,3.4,5.9c1.5,1.6,3.2,2.8,5.3,3.7c2.1,0.9,4.4,1.3,7,1.3 c2.6,0,4.9-0.4,7-1.3c2.1-0.9,3.8-2.1,5.3-3.7c1.4-1.6,2.5-3.6,3.3-5.9C503.8,57.1,504.2,54.5,504.2,51.6z" /> </g> <g> <path class="st1" d="M534.9,50.4l2.3,0c1.9,0,3.5-0.2,4.9-0.7c1.4-0.5,2.5-1.1,3.4-1.9c0.9-0.8,1.6-1.8,2-2.9 c0.4-1.1,0.7-2.4,0.7-3.7c0-2.7-0.9-4.8-2.7-6.2c-1.8-1.4-4.5-2.2-8.1-2.2H531v17.6v7.1v20.7h-9.9v-53h16.2c3.6,0,6.7,0.4,9.3,1.1 c2.6,0.7,4.7,1.8,6.3,3.1c1.6,1.3,2.9,3,3.6,4.8c0.8,1.9,1.2,3.9,1.2,6.2c0,1.8-0.3,3.5-0.8,5.1c-0.5,1.6-1.3,3-2.3,4.3 c-1,1.3-2.2,2.4-3.7,3.4c-1.5,1-3.1,1.8-5,2.3c1.2,0.7,2.3,1.7,3.2,3l13.3,19.6h-8.9c-0.9,0-1.6-0.2-2.2-0.5 c-0.6-0.3-1.1-0.8-1.5-1.5c0,0-11.1-17-11.1-17c-0.3-0.4-0.9-1.3-1.5-1.4c-1.2,0-2.4,0-3.5,0c0,0,0-6,0-6.4 C533.8,50.4,534.9,50.4,534.9,50.4z" /> </g> <g> <path class="st1" d="M591.4,70.9c2.2,0,4.2-0.2,5.8-0.6c1.6-0.4,3.2-1,4.7-1.7v-12h-6.6c-0.6,0-1.1-0.2-1.5-0.5 c-0.4-0.4-0.6-0.8-0.6-1.3v-5.6h17.6V73c-1.3,1-2.7,1.8-4.2,2.5c-1.5,0.7-3,1.3-4.7,1.8c-1.7,0.5-3.4,0.8-5.3,1 c-1.9,0.2-3.9,0.3-6.1,0.3c-3.9,0-7.4-0.7-10.7-2c-3.3-1.3-6.1-3.2-8.4-5.6c-2.4-2.4-4.2-5.3-5.6-8.6c-1.3-3.3-2-7-2-10.9 c0-4,0.6-7.6,1.9-11c1.3-3.3,3.1-6.2,5.5-8.6c2.4-2.4,5.3-4.3,8.7-5.6c3.4-1.3,7.2-2,11.4-2c4.3,0,8.1,0.6,11.2,1.9 c3.2,1.3,5.8,3,8,5l-2.9,4.5c-0.6,0.9-1.3,1.4-2.2,1.4c-0.6,0-1.2-0.2-1.8-0.6c-0.8-0.5-1.6-0.9-2.4-1.4c-0.8-0.5-1.7-0.9-2.7-1.2 c-1-0.3-2.1-0.6-3.3-0.8c-1.2-0.2-2.7-0.3-4.3-0.3c-2.6,0-5,0.4-7.1,1.3c-2.1,0.9-3.9,2.1-5.4,3.8c-1.5,1.6-2.6,3.6-3.4,5.9 c-0.8,2.3-1.2,4.9-1.2,7.7c0,3.1,0.4,5.8,1.3,8.2c0.9,2.4,2.1,4.4,3.6,6s3.4,2.9,5.5,3.8S588.9,70.9,591.4,70.9z" /> </g> <g> <path class="st1" d="M645.7,56.8h-16.1v13.4H653v7.9h-33.4v-53H653V33h-23.5v16.3H648v5.8C648,55.1,647.9,56.8,645.7,56.8z" /> </g></g></svg>
+</a>
+<div class="title-bar-right">
+<button type="button" class="menu-icon" data-toggle="offCanvas"></button>
+</div>
+</div>
+</section>
+<section class="sandiego l-header-nav-bottom">
+<nav class="row">
+<a href="/" title="Home" class="sf-logo">
+<svg data-name="sf-logo-full" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 653 102.6" style="enable-background:new 0 0 653 102.6;" xml:space="preserve"><path class="st0" d="M66.9,54.5c0-19.1-6.8-27.8-10.4-31.1c-0.7-0.6-1.8-0.1-1.7,0.9c0.7,10.8-12.9,13.5-12.9,30.4h0 c0,0,0,0.1,0,0.1c0,10.3,7.8,18.7,17.4,18.7c9.6,0,17.4-8.4,17.4-18.7c0,0,0-0.1,0-0.1h0c0-4.8-1.8-9.4-3.6-12.8 c-0.4-0.7-1.4-0.4-1.3,0.2C75.1,56.7,66.9,65.7,66.9,54.5z" /><g> <path class="st0" d="M46.2,94.8c-0.4,0-0.9-0.2-1.2-0.5L0.5,49.8c-0.6-0.6-0.6-1.7,0-2.4l47-47C47.8,0.2,48.2,0,48.6,0h13.5 c0.8,0,1.3,0.5,1.5,1c0.2,0.5,0.2,1.2-0.4,1.8L19.1,47c-0.9,0.9-0.9,2.3,0,3.2L54,85.2c0.6,0.6,0.6,1.7,0,2.4l-6.7,6.8 C47,94.6,46.6,94.8,46.2,94.8z" /></g><g> <path class="st0" d="M55.1,102.6c-0.8,0-1.3-0.5-1.5-1c-0.2-0.5-0.2-1.2,0.4-1.8l44.2-44.2c0.4-0.4,0.7-1,0.7-1.6 c0-0.6-0.2-1.2-0.7-1.6L63.2,17.4c-0.6-0.6-0.6-1.7,0-2.4l6.8-6.8c0.3-0.3,0.7-0.5,1.2-0.5S72,8,72.3,8.3l44.4,44.5 c0.3,0.3,0.5,0.7,0.5,1.2s-0.2,0.9-0.5,1.2l-47,47c-0.3,0.3-0.7,0.5-1.2,0.5H55.1z" /></g><g> <g> <path class="st1" d="M167.2,32c-0.2,0.4-0.5,0.6-1,0.6c-0.3,0-0.7-0.2-1.2-0.7c-0.5-0.5-1.2-1-2-1.5c-0.9-0.6-1.9-1.1-3.2-1.5 c-1.3-0.5-2.9-0.7-4.8-0.7c-1.9,0-3.5,0.3-5,0.8c-1.4,0.5-2.6,1.3-3.6,2.2s-1.7,2-2.2,3.2c-0.5,1.2-0.8,2.5-0.8,3.8 c0,1.8,0.4,3.2,1.1,4.4c0.7,1.1,1.7,2.1,3,2.9c1.2,0.8,2.6,1.5,4.2,2c1.6,0.6,3.2,1.1,4.8,1.6c1.6,0.5,3.2,1.1,4.8,1.8 c1.6,0.6,2.9,1.5,4.2,2.4s2.2,2.2,3,3.6c0.7,1.4,1.1,3.2,1.1,5.3c0,2.2-0.4,4.2-1.1,6.1c-0.7,1.9-1.8,3.6-3.2,5 c-1.4,1.4-3.2,2.5-5.2,3.4c-2.1,0.8-4.4,1.2-7,1.2c-3.4,0-6.4-0.6-8.8-1.8c-2.5-1.2-4.6-2.9-6.5-5l1-1.6c0.3-0.4,0.6-0.5,1-0.5 c0.2,0,0.5,0.1,0.8,0.4c0.3,0.3,0.8,0.7,1.2,1.1c0.5,0.4,1.1,0.9,1.8,1.4c0.7,0.5,1.5,1,2.4,1.4c0.9,0.4,1.9,0.8,3.1,1.1 c1.2,0.3,2.5,0.4,4,0.4c2.1,0,3.9-0.3,5.5-0.9c1.6-0.6,3-1.5,4.1-2.5s2-2.4,2.6-3.8c0.6-1.5,0.9-3.1,0.9-4.7 c0-1.8-0.4-3.3-1.1-4.5c-0.7-1.2-1.7-2.2-3-3c-1.2-0.8-2.6-1.5-4.2-2c-1.6-0.5-3.2-1.1-4.8-1.6c-1.6-0.5-3.2-1.1-4.8-1.7 c-1.6-0.6-2.9-1.4-4.2-2.4c-1.2-1-2.2-2.2-3-3.7c-0.7-1.5-1.1-3.3-1.1-5.6c0-1.7,0.3-3.4,1-5c0.7-1.6,1.6-3,2.9-4.3 c1.3-1.2,2.8-2.2,4.7-3c1.9-0.7,4-1.1,6.4-1.1c2.7,0,5.1,0.4,7.3,1.3c2.1,0.9,4.1,2.2,5.9,3.9L167.2,32z" /> <path class="st2" d="M152.9,78.8c-3.5,0-6.6-0.6-9.1-1.9c-2.5-1.2-4.8-3-6.7-5.1l-0.3-0.3l1.3-2c0.6-0.7,1.1-0.8,1.5-0.8 c0.4,0,0.8,0.2,1.2,0.6c0.3,0.3,0.8,0.7,1.3,1.1c0.5,0.4,1.1,0.9,1.7,1.4c0.7,0.5,1.4,0.9,2.3,1.3c0.9,0.4,1.9,0.8,3,1 c1.1,0.3,2.4,0.4,3.9,0.4c2,0,3.8-0.3,5.3-0.9c1.5-0.6,2.8-1.4,3.9-2.4c1-1,1.9-2.2,2.4-3.6c0.6-1.4,0.8-2.9,0.8-4.5 c0-1.7-0.3-3.1-1-4.2c-0.7-1.1-1.6-2-2.8-2.8c-1.2-0.8-2.5-1.4-4-1.9c-1.5-0.5-3.1-1.1-4.8-1.6c-1.7-0.5-3.3-1.1-4.8-1.7 c-1.6-0.7-3.1-1.5-4.3-2.5c-1.3-1-2.3-2.4-3.1-3.9c-0.8-1.6-1.2-3.5-1.2-5.8c0-1.8,0.3-3.6,1-5.3c0.7-1.7,1.7-3.2,3-4.5 c1.3-1.3,3-2.3,4.9-3.1c1.9-0.8,4.2-1.2,6.6-1.2c2.8,0,5.3,0.4,7.5,1.3c2.2,0.9,4.2,2.3,6.1,4.1l0.3,0.3l-1.1,2.1 c-0.6,1.1-1.7,1.4-3.1,0.1c-0.5-0.4-1.1-0.9-2-1.4c-0.8-0.5-1.9-1-3.1-1.5c-1.2-0.4-2.7-0.7-4.6-0.7c-1.8,0-3.4,0.3-4.8,0.8 c-1.3,0.5-2.5,1.2-3.4,2.1c-0.9,0.9-1.6,1.9-2.1,3c-0.5,1.1-0.7,2.4-0.7,3.6c0,1.6,0.3,3,1,4c0.7,1.1,1.6,2,2.8,2.8 c1.2,0.8,2.5,1.4,4,2c1.5,0.5,3.1,1.1,4.8,1.6c1.6,0.5,3.3,1.1,4.8,1.8c1.6,0.7,3.1,1.5,4.3,2.5c1.3,1,2.3,2.3,3.1,3.8 c0.8,1.5,1.2,3.4,1.2,5.6c0,2.2-0.4,4.4-1.2,6.4c-0.8,2-1.9,3.7-3.4,5.2c-1.5,1.5-3.3,2.6-5.4,3.5 C158.1,78.3,155.6,78.8,152.9,78.8z M138.4,71.3c1.7,1.9,3.7,3.4,6,4.5c2.4,1.2,5.3,1.8,8.6,1.8c2.5,0,4.8-0.4,6.8-1.2 c2-0.8,3.6-1.9,5-3.2c1.3-1.3,2.4-3,3.1-4.8c0.7-1.8,1.1-3.8,1.1-5.9c0-2-0.4-3.7-1-5.1c-0.7-1.3-1.6-2.5-2.8-3.4 c-1.2-0.9-2.5-1.7-4-2.4c-1.5-0.6-3.1-1.2-4.7-1.8c-1.6-0.5-3.2-1.1-4.8-1.6c-1.6-0.6-3-1.3-4.3-2.1c-1.3-0.8-2.3-1.9-3.1-3.1 c-0.8-1.2-1.2-2.8-1.2-4.7c0-1.4,0.3-2.8,0.8-4.1c0.5-1.3,1.3-2.5,2.3-3.4c1-1,2.3-1.8,3.8-2.3c1.5-0.6,3.3-0.8,5.2-0.8 c1.9,0,3.6,0.2,5,0.7c1.3,0.5,2.5,1,3.3,1.6c0.9,0.6,1.6,1.1,2.1,1.6c0.6,0.5,0.8,0.5,0.8,0.5c0.1,0,0.3,0,0.4-0.3l0.7-1.3 c-1.6-1.5-3.4-2.7-5.3-3.5c-2.1-0.8-4.4-1.2-7-1.2c-2.3,0-4.4,0.4-6.2,1.1c-1.8,0.7-3.3,1.7-4.5,2.8c-1.2,1.2-2.1,2.5-2.8,4.1 c-0.6,1.5-0.9,3.1-0.9,4.8c0,2.1,0.4,3.9,1.1,5.3c0.7,1.4,1.6,2.6,2.8,3.5c1.2,0.9,2.5,1.7,4,2.3c1.5,0.6,3.1,1.2,4.7,1.7 c1.6,0.5,3.2,1,4.8,1.6c1.6,0.6,3,1.2,4.3,2.1c1.3,0.8,2.4,1.9,3.1,3.2c0.8,1.3,1.2,2.9,1.2,4.9c0,1.8-0.3,3.4-0.9,5 c-0.6,1.6-1.5,2.9-2.7,4c-1.2,1.1-2.6,2-4.3,2.7c-1.7,0.6-3.6,1-5.7,1c-1.5,0-2.9-0.2-4.2-0.5c-1.2-0.3-2.3-0.7-3.2-1.1 c-0.9-0.4-1.8-0.9-2.5-1.5c-0.7-0.5-1.3-1-1.8-1.4c-0.5-0.4-0.9-0.8-1.2-1.1c-0.3-0.3-0.5-0.3-0.5-0.3c-0.1,0-0.3,0-0.5,0.3 L138.4,71.3z" /> </g> <g> <path class="st1" d="M226.7,51.6c0,4-0.6,7.6-1.8,10.9c-1.2,3.3-2.9,6.1-5.1,8.4c-2.2,2.3-4.8,4.1-7.8,5.4 c-3,1.3-6.4,1.9-10.1,1.9c-3.6,0-7-0.6-10-1.9c-3-1.3-5.6-3-7.8-5.4c-2.2-2.3-3.9-5.1-5.1-8.4c-1.2-3.3-1.8-6.9-1.8-10.9 c0-4,0.6-7.6,1.8-10.9c1.2-3.3,2.9-6.1,5.1-8.4c2.2-2.3,4.8-4.1,7.8-5.4c3-1.3,6.4-1.9,10-1.9c3.7,0,7.1,0.6,10.1,1.9 c3,1.3,5.6,3,7.8,5.4c2.2,2.3,3.9,5.1,5.1,8.4C226.1,44,226.7,47.6,226.7,51.6z M222.8,51.6c0-3.6-0.5-6.9-1.5-9.8 c-1-2.9-2.4-5.3-4.2-7.3c-1.8-2-4-3.5-6.6-4.6c-2.6-1.1-5.4-1.6-8.5-1.6c-3.1,0-5.9,0.5-8.5,1.6c-2.6,1.1-4.8,2.6-6.6,4.6 c-1.8,2-3.3,4.4-4.3,7.3c-1,2.9-1.5,6.1-1.5,9.8c0,3.6,0.5,6.9,1.5,9.8c1,2.9,2.4,5.3,4.3,7.3c1.8,2,4,3.5,6.6,4.6 c2.6,1.1,5.4,1.6,8.5,1.6c3.1,0,6-0.5,8.5-1.6c2.6-1,4.8-2.6,6.6-4.6c1.8-2,3.2-4.4,4.2-7.3C222.3,58.5,222.8,55.3,222.8,51.6z" /> <path class="st2" d="M202,78.7c-3.7,0-7.2-0.7-10.2-1.9c-3.1-1.3-5.8-3.1-8-5.5c-2.2-2.4-4-5.2-5.2-8.6c-1.2-3.3-1.9-7.1-1.9-11.1 c0-4,0.6-7.8,1.9-11.1c1.2-3.3,3-6.2,5.2-8.6c2.2-2.4,4.9-4.2,8-5.5c3.1-1.3,6.5-2,10.2-2c3.8,0,7.2,0.7,10.3,1.9 c3.1,1.3,5.8,3.1,8,5.5c2.2,2.4,4,5.3,5.2,8.6c1.2,3.3,1.8,7,1.8,11.1c0,4.1-0.6,7.8-1.8,11.1c-1.2,3.3-3,6.2-5.2,8.6 c-2.2,2.4-4.9,4.2-8,5.5C209.2,78.1,205.7,78.7,202,78.7z M202,25.7c-3.5,0-6.8,0.6-9.8,1.9c-2.9,1.2-5.5,3-7.6,5.2 c-2.1,2.2-3.8,5-4.9,8.2c-1.2,3.2-1.8,6.8-1.8,10.7c0,3.9,0.6,7.5,1.8,10.7c1.2,3.2,2.8,5.9,4.9,8.2c2.1,2.2,4.7,4,7.6,5.2 c2.9,1.2,6.2,1.8,9.8,1.8c3.6,0,6.9-0.6,9.8-1.8c2.9-1.2,5.5-3,7.6-5.2c2.1-2.2,3.8-5,4.9-8.1c1.2-3.2,1.8-6.8,1.8-10.7 c0-3.9-0.6-7.5-1.8-10.7c-1.2-3.2-2.8-5.9-4.9-8.2c-2.1-2.2-4.7-4-7.6-5.2C208.9,26.3,205.6,25.7,202,25.7z" /> </g> <g> <path class="st1" d="M256.4,74.9c2.5,0,4.7-0.4,6.7-1.3c2-0.9,3.6-2.1,5-3.6c1.4-1.5,2.4-3.4,3.1-5.4c0.7-2.1,1.1-4.3,1.1-6.8 V25.7h3.7v32.1c0,2.9-0.5,5.5-1.4,8c-0.9,2.5-2.2,4.6-3.9,6.5c-1.7,1.8-3.8,3.3-6.2,4.3c-2.4,1-5.2,1.6-8.2,1.6 c-3,0-5.8-0.5-8.2-1.6c-2.4-1.1-4.5-2.5-6.2-4.3c-1.7-1.8-3-4-3.9-6.5c-0.9-2.5-1.4-5.2-1.4-8V25.7h3.8v32c0,2.4,0.4,4.7,1.1,6.8 c0.7,2.1,1.8,3.9,3.1,5.4c1.4,1.5,3,2.7,5,3.6C251.6,74.5,253.9,74.9,256.4,74.9z" /> <path class="st2" d="M256.4,78.8c-3.1,0-5.9-0.5-8.4-1.6c-2.5-1.1-4.7-2.6-6.4-4.5c-1.7-1.9-3.1-4.2-4-6.7 c-0.9-2.5-1.4-5.3-1.4-8.2V25.1h5v32.7c0,2.3,0.4,4.5,1,6.6c0.7,2,1.7,3.8,3,5.2c1.3,1.5,2.9,2.6,4.8,3.5c1.9,0.8,4,1.3,6.4,1.3 c2.4,0,4.6-0.4,6.4-1.2c1.9-0.8,3.5-2,4.8-3.5c1.3-1.5,2.3-3.2,3-5.2c0.7-2,1-4.2,1-6.6V25.1h5v32.7c0,2.9-0.5,5.7-1.4,8.2 c-0.9,2.5-2.3,4.8-4,6.7c-1.7,1.9-3.9,3.4-6.4,4.5C262.3,78.3,259.5,78.8,256.4,78.8z M237.3,26.3v31.5c0,2.8,0.4,5.4,1.3,7.8 c0.9,2.4,2.1,4.5,3.8,6.3c1.6,1.8,3.6,3.2,6,4.2c2.3,1,5,1.5,8,1.5c2.9,0,5.6-0.5,8-1.5c2.3-1,4.4-2.4,6-4.2 c1.6-1.8,2.9-3.9,3.8-6.3c0.9-2.4,1.3-5,1.3-7.8V26.3h-2.5v31.5c0,2.5-0.4,4.8-1.1,7c-0.7,2.2-1.8,4.1-3.3,5.7 c-1.4,1.6-3.2,2.9-5.2,3.8c-2,0.9-4.4,1.4-6.9,1.4c-2.6,0-4.9-0.5-6.9-1.4c-2-0.9-3.8-2.2-5.2-3.8c-1.4-1.6-2.5-3.5-3.2-5.7 c-0.7-2.1-1.1-4.5-1.1-7V26.3H237.3z" /> </g> <g> <path class="st1" d="M297.5,51.3c1,0,0.9,0,0.9,0l2.2,0c2.3,0,4.4-0.3,6.2-0.8c1.8-0.6,3.4-1.3,4.6-2.4c1.3-1,2.2-2.3,2.9-3.7 c0.7-1.4,1-3.1,1-4.9c0-3.7-1.2-6.4-3.6-8.2c-2.4-1.8-5.9-2.7-10.6-2.7h-9.5v22.7v2.8v23.5h-3.7V25.7h13.2c6,0,10.5,1.2,13.4,3.5 c3,2.3,4.4,5.7,4.4,10.2c0,2-0.3,3.8-1,5.4c-0.7,1.6-1.7,3.1-3,4.3c-1.3,1.2-2.8,2.3-4.6,3c-1.8,0.8-3.9,1.3-6.1,1.6 c0.6,0.4,1.1,0.9,1.6,1.5l17.9,22.4h-3.3c-0.4,0-0.7-0.1-1-0.2c-0.3-0.1-0.6-0.4-0.8-0.7l-16.6-21c-0.4-0.5-0.9-0.9-1.3-1.1 c-0.5-0.2-3.4-0.3-4.4-0.3C296.3,51.6,296.7,51.3,297.5,51.3z" /> <path class="st2" d="M325,78.2h-4.5c-0.5,0-0.9-0.1-1.3-0.3c-0.4-0.2-0.7-0.5-1-0.9l-16.6-21c-0.4-0.5-0.7-0.8-1.1-1 c-0.4-0.1-2.8-0.3-4.1-0.3h-0.6v-2.6c0-0.9,0.2-1.4,1.8-1.4c0.9,0,1,0,1,0l2.2,0c2.2,0,4.2-0.3,6-0.8c1.7-0.5,3.2-1.3,4.4-2.3 c1.2-1,2.1-2.1,2.7-3.5c0.6-1.4,0.9-2.9,0.9-4.6c0-3.5-1.1-6-3.4-7.7c-2.3-1.7-5.7-2.6-10.2-2.6h-8.9v48.9h-5V25.1h13.9 c6.1,0,10.7,1.2,13.8,3.6c3.1,2.4,4.7,6,4.7,10.7c0,2.1-0.4,4-1.1,5.7c-0.7,1.7-1.8,3.2-3.1,4.5c-1.3,1.3-3,2.3-4.8,3.2 c-1.5,0.6-3.1,1.1-4.9,1.4c0.2,0.2,0.4,0.4,0.6,0.7L325,78.2z M296.9,53.5c1.1,0,3.4,0.1,4,0.4c0.6,0.3,1.1,0.7,1.6,1.3l16.6,21 c0.2,0.3,0.4,0.5,0.6,0.6c0.2,0.1,0.4,0.2,0.7,0.2h2l-17.1-21.4c-0.4-0.6-0.9-1-1.4-1.3l-1.5-0.9l1.8-0.2c2.2-0.2,4.2-0.7,5.9-1.5 c1.7-0.8,3.2-1.7,4.5-2.9c1.2-1.2,2.2-2.5,2.8-4.1c0.6-1.6,1-3.3,1-5.2c0-4.3-1.4-7.5-4.2-9.7c-2.8-2.2-7.2-3.3-13-3.3h-12.6V77 h2.5V28h10.1c4.7,0,8.4,0.9,10.9,2.8c2.6,1.9,3.9,4.8,3.9,8.7c0,1.9-0.4,3.6-1,5.1c-0.7,1.5-1.7,2.8-3.1,3.9 c-1.3,1.1-2.9,1.9-4.8,2.5c-1.9,0.6-4,0.9-6.4,0.9l-2.2,0c-0.1,0-0.2,0-0.9,0C297.3,51.9,297,51.9,296.9,53.5z" /> </g> <g> <path class="st1" d="M367.6,68.8c0.2,0,0.5,0.1,0.6,0.3l1.5,1.6c-1.1,1.1-2.2,2.2-3.5,3.1c-1.3,0.9-2.7,1.7-4.2,2.3 c-1.5,0.6-3.2,1.1-4.9,1.5c-1.8,0.4-3.8,0.5-5.9,0.5c-3.6,0-6.9-0.6-9.9-1.9c-3-1.3-5.6-3-7.7-5.4c-2.1-2.3-3.8-5.1-5-8.4 c-1.2-3.3-1.8-6.9-1.8-10.9c0-3.9,0.6-7.5,1.9-10.8c1.2-3.3,3-6,5.2-8.4c2.2-2.3,4.9-4.1,8-5.4c3.1-1.3,6.6-1.9,10.3-1.9 c1.9,0,3.6,0.1,5.2,0.4c1.6,0.3,3,0.7,4.4,1.2c1.4,0.5,2.6,1.2,3.8,2c1.2,0.8,2.4,1.7,3.5,2.7l-1.1,1.6c-0.2,0.3-0.5,0.4-0.9,0.4 c-0.2,0-0.5-0.1-0.8-0.4c-0.3-0.3-0.8-0.6-1.3-1c-0.5-0.4-1.2-0.8-1.9-1.2c-0.7-0.5-1.6-0.9-2.7-1.2c-1-0.4-2.2-0.7-3.6-1 c-1.3-0.3-2.9-0.4-4.6-0.4c-3.2,0-6.1,0.5-8.7,1.6c-2.6,1.1-4.9,2.6-6.8,4.7c-1.9,2-3.4,4.5-4.5,7.3s-1.6,6.1-1.6,9.7 c0,3.7,0.5,6.9,1.6,9.8c1.1,2.9,2.5,5.3,4.4,7.3c1.9,2,4.1,3.5,6.6,4.6c2.5,1.1,5.3,1.6,8.2,1.6c1.9,0,3.5-0.1,5-0.4 c1.5-0.2,2.8-0.6,4-1.1c1.2-0.5,2.4-1.1,3.4-1.8c1.1-0.7,2.1-1.5,3.1-2.5c0.1-0.1,0.2-0.2,0.3-0.2 C367.3,68.9,367.5,68.8,367.6,68.8z" /> <path class="st2" d="M351.1,78.8c-3.7,0-7.1-0.7-10.1-1.9c-3.1-1.3-5.7-3.1-7.9-5.5c-2.2-2.4-3.9-5.2-5.1-8.6 c-1.2-3.3-1.8-7.1-1.8-11.1c0-4,0.6-7.7,1.9-11c1.3-3.3,3.1-6.2,5.3-8.6c2.3-2.4,5.1-4.3,8.2-5.6c3.2-1.3,6.7-2,10.6-2 c1.9,0,3.7,0.1,5.3,0.4c1.6,0.3,3.1,0.7,4.5,1.2c1.4,0.5,2.7,1.2,3.9,2c1.2,0.8,2.4,1.7,3.6,2.8l0.4,0.4l-1.4,2.1 c-0.2,0.3-0.6,0.7-1.4,0.7c-0.4,0-0.7-0.2-1.2-0.5c-0.3-0.3-0.8-0.6-1.3-0.9c-0.5-0.4-1.1-0.8-1.9-1.2c-0.7-0.4-1.6-0.8-2.6-1.2 c-1-0.4-2.2-0.7-3.5-0.9c-1.3-0.2-2.8-0.4-4.5-0.4c-3.1,0-5.9,0.5-8.5,1.6c-2.5,1.1-4.8,2.6-6.6,4.5c-1.8,1.9-3.3,4.3-4.3,7.1 c-1,2.8-1.6,6-1.6,9.4c0,3.6,0.5,6.8,1.5,9.6c1,2.8,2.4,5.2,4.2,7.1c1.8,1.9,3.9,3.4,6.4,4.4c2.4,1,5.1,1.5,8,1.5 c1.8,0,3.5-0.1,4.9-0.4c1.4-0.2,2.7-0.6,3.9-1.1c1.2-0.5,2.3-1.1,3.3-1.7c1-0.7,2-1.5,3-2.4c0.2-0.2,0.3-0.2,0.5-0.3 c0.5-0.3,1.3-0.2,1.7,0.3l1.9,2l-0.4,0.4c-1.1,1.2-2.3,2.2-3.6,3.2c-1.3,0.9-2.7,1.8-4.3,2.4c-1.5,0.7-3.2,1.2-5.1,1.5 C355.3,78.6,353.3,78.8,351.1,78.8z M352.2,25.7c-3.7,0-7.1,0.6-10.1,1.9c-3,1.2-5.7,3-7.8,5.3c-2.2,2.3-3.9,5-5.1,8.2 c-1.2,3.2-1.8,6.7-1.8,10.6c0,3.9,0.6,7.5,1.8,10.7c1.2,3.2,2.8,5.9,4.9,8.2c2.1,2.2,4.6,4,7.5,5.2c2.9,1.2,6.1,1.8,9.6,1.8 c2.1,0,4-0.2,5.8-0.5c1.7-0.3,3.4-0.8,4.8-1.5c1.5-0.6,2.8-1.4,4-2.3c1.1-0.8,2.1-1.7,3-2.6l-1.1-1.2c-0.1-0.1-0.2-0.1-0.3,0 c-0.1,0-0.2,0.1-0.3,0.2c-1,0.9-2.1,1.8-3.2,2.5c-1.1,0.7-2.3,1.4-3.5,1.9c-1.3,0.5-2.7,0.9-4.1,1.1c-1.5,0.2-3.2,0.4-5.1,0.4 c-3,0-5.9-0.6-8.5-1.6c-2.6-1.1-4.9-2.7-6.8-4.7c-1.9-2-3.4-4.6-4.5-7.5c-1.1-2.9-1.6-6.3-1.6-10c0-3.6,0.5-6.9,1.6-9.9 c1.1-2.9,2.6-5.5,4.6-7.5c2-2.1,4.3-3.7,7-4.8c2.7-1.1,5.7-1.7,8.9-1.7c1.7,0,3.3,0.1,4.7,0.4c1.4,0.3,2.6,0.6,3.7,1 c1.1,0.4,2,0.8,2.8,1.3c0.8,0.5,1.4,0.9,1.9,1.3c0.5,0.4,1,0.7,1.3,1c0.3,0.3,0.5,0.3,0.5,0.3c0.3,0,0.4-0.1,0.4-0.2l0.8-1.2 c-1-0.9-2-1.6-3-2.3c-1.2-0.8-2.4-1.4-3.7-1.9c-1.3-0.5-2.8-0.9-4.3-1.2C355.7,25.9,354,25.7,352.2,25.7z" /> </g> <g> <path class="st1" d="M410.3,25.7v3.1H383v21h22.7v3H383v21.6h27.3v3.1h-31.1V25.7H410.3z" /> <path class="st2" d="M410.9,78.2h-32.3V25.1h32.3v4.3h-27.3v19.7h22.7v4.3h-22.7v20.4h27.3V78.2z M379.8,77h29.9v-1.9h-27.3V52.2 h22.7v-1.8h-22.7V28.2h27.3v-1.9h-29.9V77z" /> </g> <g> <path class="st1" d="M456.8,25.1V33h-23.5v15.7h19.8v7.9h-19.8v21.6h-9.9v-53H456.8z" /> </g> <g> <path class="st1" d="M514.3,51.6c0,3.9-0.6,7.5-1.9,10.8c-1.3,3.3-3.1,6.2-5.5,8.6c-2.3,2.4-5.2,4.3-8.5,5.7c-3.3,1.4-7,2-11,2 c-4,0-7.7-0.7-11-2c-3.3-1.4-6.1-3.2-8.5-5.7c-2.4-2.4-4.2-5.3-5.5-8.6s-1.9-6.9-1.9-10.8s0.6-7.5,1.9-10.8 c1.3-3.3,3.1-6.2,5.5-8.6c2.4-2.4,5.2-4.3,8.5-5.7c3.3-1.4,7-2,11-2c4,0,7.7,0.7,11,2.1c3.3,1.4,6.1,3.3,8.5,5.7 c2.3,2.4,4.2,5.3,5.5,8.6C513.6,44.1,514.3,47.7,514.3,51.6z M504.2,51.6c0-2.9-0.4-5.5-1.2-7.8c-0.8-2.3-1.9-4.3-3.3-5.9 c-1.4-1.6-3.2-2.8-5.3-3.7c-2.1-0.9-4.4-1.3-7-1.3c-2.6,0-4.9,0.4-7,1.3c-2.1,0.9-3.8,2.1-5.3,3.7c-1.5,1.6-2.6,3.6-3.4,5.9 c-0.8,2.3-1.2,4.9-1.2,7.8s0.4,5.5,1.2,7.8c0.8,2.3,1.9,4.3,3.4,5.9c1.5,1.6,3.2,2.8,5.3,3.7c2.1,0.9,4.4,1.3,7,1.3 c2.6,0,4.9-0.4,7-1.3c2.1-0.9,3.8-2.1,5.3-3.7c1.4-1.6,2.5-3.6,3.3-5.9C503.8,57.1,504.2,54.5,504.2,51.6z" /> </g> <g> <path class="st1" d="M534.9,50.4l2.3,0c1.9,0,3.5-0.2,4.9-0.7c1.4-0.5,2.5-1.1,3.4-1.9c0.9-0.8,1.6-1.8,2-2.9 c0.4-1.1,0.7-2.4,0.7-3.7c0-2.7-0.9-4.8-2.7-6.2c-1.8-1.4-4.5-2.2-8.1-2.2H531v17.6v7.1v20.7h-9.9v-53h16.2c3.6,0,6.7,0.4,9.3,1.1 c2.6,0.7,4.7,1.8,6.3,3.1c1.6,1.3,2.9,3,3.6,4.8c0.8,1.9,1.2,3.9,1.2,6.2c0,1.8-0.3,3.5-0.8,5.1c-0.5,1.6-1.3,3-2.3,4.3 c-1,1.3-2.2,2.4-3.7,3.4c-1.5,1-3.1,1.8-5,2.3c1.2,0.7,2.3,1.7,3.2,3l13.3,19.6h-8.9c-0.9,0-1.6-0.2-2.2-0.5 c-0.6-0.3-1.1-0.8-1.5-1.5c0,0-11.1-17-11.1-17c-0.3-0.4-0.9-1.3-1.5-1.4c-1.2,0-2.4,0-3.5,0c0,0,0-6,0-6.4 C533.8,50.4,534.9,50.4,534.9,50.4z" /> </g> <g> <path class="st1" d="M591.4,70.9c2.2,0,4.2-0.2,5.8-0.6c1.6-0.4,3.2-1,4.7-1.7v-12h-6.6c-0.6,0-1.1-0.2-1.5-0.5 c-0.4-0.4-0.6-0.8-0.6-1.3v-5.6h17.6V73c-1.3,1-2.7,1.8-4.2,2.5c-1.5,0.7-3,1.3-4.7,1.8c-1.7,0.5-3.4,0.8-5.3,1 c-1.9,0.2-3.9,0.3-6.1,0.3c-3.9,0-7.4-0.7-10.7-2c-3.3-1.3-6.1-3.2-8.4-5.6c-2.4-2.4-4.2-5.3-5.6-8.6c-1.3-3.3-2-7-2-10.9 c0-4,0.6-7.6,1.9-11c1.3-3.3,3.1-6.2,5.5-8.6c2.4-2.4,5.3-4.3,8.7-5.6c3.4-1.3,7.2-2,11.4-2c4.3,0,8.1,0.6,11.2,1.9 c3.2,1.3,5.8,3,8,5l-2.9,4.5c-0.6,0.9-1.3,1.4-2.2,1.4c-0.6,0-1.2-0.2-1.8-0.6c-0.8-0.5-1.6-0.9-2.4-1.4c-0.8-0.5-1.7-0.9-2.7-1.2 c-1-0.3-2.1-0.6-3.3-0.8c-1.2-0.2-2.7-0.3-4.3-0.3c-2.6,0-5,0.4-7.1,1.3c-2.1,0.9-3.9,2.1-5.4,3.8c-1.5,1.6-2.6,3.6-3.4,5.9 c-0.8,2.3-1.2,4.9-1.2,7.7c0,3.1,0.4,5.8,1.3,8.2c0.9,2.4,2.1,4.4,3.6,6s3.4,2.9,5.5,3.8S588.9,70.9,591.4,70.9z" /> </g> <g> <path class="st1" d="M645.7,56.8h-16.1v13.4H653v7.9h-33.4v-53H653V33h-23.5v16.3H648v5.8C648,55.1,647.9,56.8,645.7,56.8z" /> </g></g></svg>
+</a>
+<div class="links">
+<div class="nav-dropdown">
+<a href="/directory/" title="Browse">Open Source Software</a>
+</div>
+<div class="nav-dropdown">
+<a href="/software/">Business Software</a>
+</div>
+<div class="nav-dropdown">
+<a>Resources</a>
+<ul class="nav-dropdown-menu">
+<li><a href="/blog/">Blog</a></li>
+<li><a href="/articles/">Articles</a></li>
+</ul>
+</div>
+<div class="dev-menu-when-stuck">
+Menu
+<ul class="dev-menu-dropdown header-nav-menulist">
+<li><a href="/support">Help</a></li>
+<li><a href="/create">Create</a></li>
+<li><a href="/user/registration_business/" title="Join">Join</a></li>
+<li><a href="https://sourceforge.net/auth/" title="Login">Login</a></li>
+</ul>
+</div>
+<div class="search-toggle-when-stuck">
+<a class="search-toggle">
+<svg data-name="search" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z" /></svg>
+</a>
+</div>
+</div>
+<div class="search">
+<form method="get" action="/software/" class="m-search-form">
+<div class="typeahead__container" data-commercial-default="true" data-commercial-only="true">
+<div class="typeahead__field">
+<div class="typeahead__query">
+<input type="text" placeholder="Search for software or solutions" autocomplete="off" name="q">
+</div>
+<label>
+<input type="submit" class="bt" value="">
+<svg data-name="search" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z" /></svg>
+</label>
+</div>
+</div>
+</form>
+</div>
+</nav>
+</section>
+<div id="banner-sterling" class="sterling">
+<div id="SF_ProjectSum_728x90_A_wrapped" data-id="div-gpt-ad-1394209358853-0" class="draper   
+visibility_rules
+ v_970_billboard  v_728_leaderboard ">
+</div>
+<script>
+/*global googletag */
+if (SF.initial_breakpoints_visible.leaderboard) {
+(function(){
+    
+    var el = document.getElementById('SF_ProjectSum_728x90_A_wrapped');
+    var newNode = document.createElement('div');
+    newNode.id = 'div-gpt-ad-1394209358853-0';
+    el.appendChild(newNode);
+}());
+
+gptadRenderers['SF_ProjectSum_728x90_A'] = function(){  // jshint ignore:line
+    
+        if (!SF.adblock) {
+            $('#div-gpt-ad-1394209358853-0').parents('.draper').css("min-height", 90 + 13 + 12); // for height of .lbl-ad and padding
+        }
+    
+    googletag.cmd.push(function() {
+        googletag.display('div-gpt-ad-1394209358853-0');
+    });
+};
+gptadRenderers['SF_ProjectSum_728x90_A']();  // jshint ignore:line
+}
+</script>
+</div>
+</div>
+<div class="l-two-column-page">
+<div class="l-content-column l-has-sidebar">
+<div class="project-body" itemscope itemtype="http://schema.org/SoftwareApplication">
+<section class="project-masthead">
+<div class="backdrop" style="box-sizing: content-box; padding-bottom: 159px"></div>
+<div class="content">
+<nav id="breadcrumbs" class="breadcrumbs rtl">
+<ul itemscope itemtype="http://schema.org/BreadcrumbList">
+<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+<a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+<meta itemprop="position" content="1" />
+</li>
+<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+<a itemprop="item" href="/software/"><span itemprop="name">Compare Business Software</span></a>
+<meta itemprop="position" content="2" />
+</li>
+<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+<a itemprop="item" href="/software/human-services/"><span itemprop="name">Human Services Software</span></a>
+<meta itemprop="position" content="3" />
+</li><li class="project" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">ECAP</span><meta itemprop="position" content="4" />
+</li>
+</ul>
+</nav>
+<div class="overview">
+<div class="project-icon   ">
+<img itemprop="image" alt="ECAP" title="ECAP" src="//a.fsdn.com/allura/s/ecap/icon?1648177033?&amp;w=90" srcset="//a.fsdn.com/allura/s/ecap/icon?1648177033?&amp;w=135 1.5x
+        " /></div>
+<div class="title ">
+<meta itemprop="name" content="ECAP" />
+<h1>ECAP
+</h1>
+<h3 class="brought-by commercial">
+Foster Care Technologies
+</h3>
+</div>
+<div class="m-popular-projects show-for-medium">
+<div class="as-h3 popular-projects-title">Popular Software</div>
+<div class="projects-inner">
+<a href="/software/product/FAMCare-Human-Services/">
+<div class="project-icon   ">
+<img alt="FAMCare Human Services" title="FAMCare Human Services" src="//a.fsdn.com/allura/s/famcare-human-services/icon?1653668255?&amp;w=48" loading="lazy" /></div>
+<div>
+<div class="software-name">FAMCare Human Services</div>
+<div class="m-stars" aria-hidden="true">
+<div class="star small yellow">
+<svg data-name="sf_star_yellow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#ffcc00" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star small yellow">
+<svg data-name="sf_star_yellow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#ffcc00" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star small yellow">
+<svg data-name="sf_star_yellow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#ffcc00" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star small yellow">
+<svg data-name="sf_star_yellow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#ffcc00" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star small empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+</div>
+</div>
+</a>
+<a href="/software/product/Foothold-Technology/">
+<div class="project-icon   ">
+<img alt="Foothold" title="Foothold" src="//a.fsdn.com/allura/s/awards/icon?1655246059?&amp;w=48" loading="lazy" /></div>
+<div>
+<div class="software-name">Foothold</div>
+<div class="m-stars" aria-hidden="true">
+<div class="star small yellow">
+<svg data-name="sf_star_yellow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#ffcc00" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star small yellow">
+<svg data-name="sf_star_yellow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#ffcc00" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star small yellow">
+<svg data-name="sf_star_yellow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#ffcc00" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star small yellow">
+<svg data-name="sf_star_yellow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#ffcc00" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star small yellow">
+<svg data-name="sf_star_yellow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#ffcc00" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+
+<div class="stats commercial ">
+<div class="rating">
+<a href="/software/product/ECAP/reviews/new" class="count" title="Add a review" rel="nofollow">Write a Review</a>
+</div>
+</div>
+<div class="buttons">
+<script>
+    if (!SF.wireOutboundZoneTrackingComplete) {  
+        $(SF.wireOutboundZoneTracking);
+        $('body').append('<iframe src="https://c.sf-syn.com/conversion_outbound_tracker/sf" id="frame-zone-outbound" style="display: none;"></iframe>');
+        SF.wireOutboundZoneTrackingComplete = true;
+    }
+</script>
+<a class="button btn-masthead-alternatives" href="/software/product/ECAP/alternatives">Alternatives to ECAP </a>
+<a id="share-project-button" class="button icon-only default " href="#">
+<svg data-name="mmSF_10share" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 42 42" enable-background="new 0 0 42 42" xml:space="preserve"><path fill="#FFFFFF" d="M34,26c-2.4,0-4.6,1.1-6.1,2.8l-12.1-6.1c0.1-0.5,0.2-1.1,0.2-1.6c0-0.6-0.1-1.1-0.2-1.7L28,13.3c1.5,1.7,3.6,2.8,6,2.8c4.4,0,8-3.6,8-8s-3.6-8-8-8s-8,3.6-8,8c0,0.6,0.1,1.1,0.2,1.7L14,15.8c-1.5-1.7-3.6-2.8-6-2.8c-4.4,0-8,3.6-8,8s3.6,8,8,8c2.4,0,4.6-1.1,6.1-2.8l12.1,6.1C26.1,32.9,26,33.4,26,34c0,4.4,3.6,8,8,8s8-3.6,8-8S38.4,26,34,26z" /></svg></a>
+<div class="social-sharing-buttons invisible hide">
+<a rel=nofollow class="social-media-icon twitter" href="https://twitter.com/share?url=https://sourceforge.net/software/product/ECAP/&amp;text=Check%20out%20ECAP%20on%20SourceForge" title="Share ECAP on SourceForge on Twitter">
+<svg data-name="twitter" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" /></svg></a>
+<a rel=nofollow class="social-media-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://sourceforge.net/software/product/ECAP/&title=ECAP%20on%20SourceForge" title="Share ECAP on SourceForge on facebook">
+<svg data-name="facebook" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" /></svg></a>
+<a rel=nofollow class="social-media-icon linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://sourceforge.net/software/product/ECAP/&title=ECAP%20on%20SourceForge&source=SourceForge.net" title="Share ECAP on SourceForge on LinkedIn">
+<svg data-name="linkedin" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z" /></svg></a>
+</div>
+<div class="push-right"></div>
+<div rel="nofollow" class="button btn-masthead-claim commercial-admin " data-newtab="true" data-target="_blank" data-href="/software/product/ECAP/claim">
+Claim this Software page
+</div>
+</div>
+<div class="as-h2">
+ECAP is available for
+<meta itemprop="operatingSystem" content="Cloud" />
+Cloud.
+</div>
+<meta itemprop="applicationCategory" content="BusinessApplication" />
+</div>
+</section>
+<article class="main-content">
+<section class="row m-section-emphasized blue">
+<div class="small-12 columns">
+<h2>
+<svg data-name="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" /></svg> Audience</h2>
+<p class="audience">
+Research-backed placement matching system for organizations
+</p>
+</div>
+</section>
+<section class="row ">
+<div class="small-12 columns">
+<h2>
+<svg data-name="cloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4z" /></svg> About ECAP</h2>
+<p itemprop="description" class="description">School of Social Welfare researchers from the University of Kansas conducted a research study to evaluate ECAP&#39;s effectiveness for improving outcomes for children and families. Their pre/post study compared the results of placements that were made with ECAP to those made without. Below is a summary of the results of this study. The researchers also studied over 22,000 past placement records to identify how certain characteristics affect placement stability. ECAP’s algorithms were adjusted to reflect this new information and to make it even more effective. ​ FCT engages in ongoing research projects projects that continuously help us better understand the relationship between placement matching and better outcomes for children and families. We consult with domain experts from our Research Advisory Board, to constantly improve the way we use predictive analytics to help reduce trauma for children and families across the nation through the use of ECAP.</p>
+</div>
+</section>
+<section class="row m-section-group small-collapse">
+<div class="columns small-12 xlarge-5 m-subgroup-1">
+<div class="m-sub-section">
+<h3 class="as-h2">
+<svg data-name="icon-integrations" viewBox="0 0 2048 1792" xmlns="http://www.w3.org/2000/svg"><path d="M960 896q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm768 512q0-52-38-90t-90-38-90 38-38 90q0 53 37.5 90.5t90.5 37.5 90.5-37.5 37.5-90.5zm0-1024q0-52-38-90t-90-38-90 38-38 90q0 53 37.5 90.5t90.5 37.5 90.5-37.5 37.5-90.5zm-384 421v185q0 10-7 19.5t-16 10.5l-155 24q-11 35-32 76 34 48 90 115 7 11 7 20 0 12-7 19-23 30-82.5 89.5t-78.5 59.5q-11 0-21-7l-115-90q-37 19-77 31-11 108-23 155-7 24-30 24h-186q-11 0-20-7.5t-10-17.5l-23-153q-34-10-75-31l-118 89q-7 7-20 7-11 0-21-8-144-133-144-160 0-9 7-19 10-14 41-53t47-61q-23-44-35-82l-152-24q-10-1-17-9.5t-7-19.5v-185q0-10 7-19.5t16-10.5l155-24q11-35 32-76-34-48-90-115-7-11-7-20 0-12 7-20 22-30 82-89t79-59q11 0 21 7l115 90q34-18 77-32 11-108 23-154 7-24 30-24h186q11 0 20 7.5t10 17.5l23 153q34 10 75 31l118-89q8-7 20-7 11 0 21 8 144 133 144 160 0 8-7 19-12 16-42 54t-45 60q23 48 34 82l152 23q10 2 17 10.5t7 19.5zm640 533v140q0 16-149 31-12 27-30 52 51 113 51 138 0 4-4 7-122 71-124 71-8 0-46-47t-52-68q-20 2-30 2t-30-2q-14 21-52 68t-46 47q-2 0-124-71-4-3-4-7 0-25 51-138-18-25-30-52-149-15-149-31v-140q0-16 149-31 13-29 30-52-51-113-51-138 0-4 4-7 4-2 35-20t59-34 30-16q8 0 46 46.5t52 67.5q20-2 30-2t30 2q51-71 92-112l6-2q4 0 124 70 4 3 4 7 0 25-51 138 17 23 30 52 149 15 149 31zm0-1024v140q0 16-149 31-12 27-30 52 51 113 51 138 0 4-4 7-122 71-124 71-8 0-46-47t-52-68q-20 2-30 2t-30-2q-14 21-52 68t-46 47q-2 0-124-71-4-3-4-7 0-25 51-138-18-25-30-52-149-15-149-31v-140q0-16 149-31 13-29 30-52-51-113-51-138 0-4 4-7 4-2 35-20t59-34 30-16q8 0 46 46.5t52 67.5q20-2 30-2t30 2q51-71 92-112l6-2q4 0 124 70 4 3 4 7 0 25-51 138 17 23 30 52 149 15 149 31z" /></svg> Integrations</h3>
+<div class="field-row">
+<div>No integrations listed.</div>
+</div>
+</div>
+<div class="m-sub-section m-comm-ratings">
+<h3 class="as-h2">
+<svg data-name="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" /></svg>
+<span>Ratings/Reviews
+</span>
+</h3>
+<div class="m-no-reviews">
+<div class="dimensional-ratings">
+<div class="dimensional-rating dimensional-stars">
+<span class="label">Overall</span>
+<div class="m-stars" aria-hidden="true">
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+</div>
+<span class="rating-score">
+0.0 / 5
+</span>
+</div>
+<div class="dimensional-rating dimensional-stars">
+<span class="label">ease</span>
+<div class="m-stars" aria-hidden="true">
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+</div>
+<span class="rating-score">
+0.0 / 5
+</span>
+</div>
+<div class="dimensional-rating dimensional-stars">
+<span class="label">features</span>
+<div class="m-stars" aria-hidden="true">
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+</div>
+<span class="rating-score">
+0.0 / 5
+</span>
+</div>
+<div class="dimensional-rating dimensional-stars">
+<span class="label">design</span>
+<div class="m-stars" aria-hidden="true">
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+</div>
+<span class="rating-score">
+0.0 / 5
+</span>
+</div>
+<div class="dimensional-rating dimensional-stars">
+<span class="label">support</span>
+<div class="m-stars" aria-hidden="true">
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+<div class="star large empty">
+<svg data-name="sf_star_grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 285.8" style="enable-background:new 0 0 300 285.8;" xml:space="preserve"><polygon class="st0" fill="#CCCCCB" points="150,0 185.4,109.2 300,109.2 207.3,176.6 242.7,285.8 150,218.3 57.3,285.8 92.7,176.6 0,109.2 114.6,109.2 " /></svg>
+</div>
+</div>
+<span class="rating-score">
+0.0 / 5
+</span>
+</div>
+</div>
+<div class="overlay">
+<p>This software hasn&#39;t been reviewed yet. Be the first to provide a review:</p>
+<a href="/software/product/ECAP/reviews/new" class="button green" rel="nofollow">Review this Software</a>
+</div>
+</div>
+</div>
+<div class="m-sub-section">
+<h3 class="as-h2">
+<svg data-name="material-business" xmlns="http://www.w3.org/2000/svg" viewBox="2 2 20 20"><path d="M0 0h24v24H0z" fill="none" /><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z" /></svg> Company Information </h3>
+<div class="field-row" itemscope itemprop="creator" itemtype="http://schema.org/Organization"><div class="field-label-font" itemprop="name">Foster Care Technologies</div></div>
+<div class="field-row">Founded: 2014</div>
+<div class="field-row">United States</div>
+<div class="field-row url">fostercaretech.com</div>
+</div>
+</div>
+<div class="columns small-12 xlarge-7 m-subgroup-2">
+<div class="m-sub-section">
+<h3 class="as-h2">
+<svg data-name="image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 448H48c-26.51 0-48-21.49-48-48V112c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48v288c0 26.51-21.49 48-48 48zM112 120c-30.928 0-56 25.072-56 56s25.072 56 56 56 56-25.072 56-56-25.072-56-56-56zM64 384h384V272l-87.515-87.515c-4.686-4.686-12.284-4.686-16.971 0L208 320l-55.515-55.515c-4.686-4.686-12.284-4.686-16.971 0L64 336v48z" /></svg> Videos and Screen Captures </h3>
+<div class="m-screenshots-display-full cta"><iframe data-src="//www.youtube-nocookie.com/embed/ae-IkemlHQ4?rel=0" frameborder="0" allowfullscreen loading=lazy></iframe>
+</div>
+<div class="owl-carousel m-screenshots clearfix" data-mode="inline">
+<a rel="section" class="thumbnail video-screenshot" data-featherlight='<iframe data-src="//www.youtube-nocookie.com/embed/ae-IkemlHQ4?rel=0" frameborder="0" allowfullscreen loading=lazy></iframe>' href="//www.youtube-nocookie.com/embed/ae-IkemlHQ4?rel=0">
+<img src="//img.youtube.com/vi/ae-IkemlHQ4/hqdefault.jpg" width="245" height="183" alt="Play Video" loading="lazy" />
+<svg data-name="video-play" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve"><g><circle class="st0" cx="150" cy="150" r="149.6" /><polygon class="st1" points="100.4,237.1 100.4,62.9 249,150.1 " /></g><g class="st2"><circle class="st3" cx="150" cy="150" r="149.6" /><polygon class="st4" points="100.4,237.1 100.4,62.9 249,150.1 " /></g></svg>
+</a>
+</div>
+<script src="//a.fsdn.com/con/js/sandiego/vendor/owl.carousel.min.js?1660230670" defer></script>
+</div>
+</div>
+</section>
+<script>
+    if (!SF.wireOutboundZoneTrackingComplete) {  
+        $(SF.wireOutboundZoneTracking);
+        $('body').append('<iframe src="https://c.sf-syn.com/conversion_outbound_tracker/sf" id="frame-zone-outbound" style="display: none;"></iframe>');
+        SF.wireOutboundZoneTrackingComplete = true;
+    }
+</script>
+<section id="nels" class="small-12 columns">
+<div class="as-header">
+<div class="as-h2">Other Useful Business Software</div>
+</div>
+<div class="nel standard can-truncate " data-id="12605" data-cid="9694">
+<span id="76bdc6c9-ca40-4670-8a78-abbde85dd828"></span>
+<script>
+    /* globals bizx */
+    bizx.cmp.trackingPixel('publisher', ['storage', 'measurement'], '/directory/tp3/?b=49864&c=9694&z=47198&cb=b52fac708f', "Project management made easy", '76bdc6c9-ca40-4670-8a78-abbde85dd828');
+</script>
+<a class="application-image thumbnail" href="https://a.slashdotmedia.com/www/delivery/ck.php?oaparams=2__bannerid=49864__zoneid=47198__cb=b52fac708f__oadest=https%3A%2F%2Fmonday.com%2Flp%2Fprojectmanagement%2Fbundle%2F%3Futm_medium%3Dcpc%26utm_source%3Dsourceforge%26utm_campaign%3Dww-en-prm-workos-work_mgmt-generic-profile%26utm_adgroup%3Dprofile" target="_blank" rel="nofollow">
+<img class="main-image" src="//a.fsdn.com/con/app/nel_img/12605" alt="Project management made easy Icon">
+</a>
+<div class="wrapper">
+<div class="heading">
+<div class="heading-main">
+<a href="https://a.slashdotmedia.com/www/delivery/ck.php?oaparams=2__bannerid=49864__zoneid=47198__cb=b52fac708f__oadest=https%3A%2F%2Fmonday.com%2Flp%2Fprojectmanagement%2Fbundle%2F%3Futm_medium%3Dcpc%26utm_source%3Dsourceforge%26utm_campaign%3Dww-en-prm-workos-work_mgmt-generic-profile%26utm_adgroup%3Dprofile" target="_blank" rel="nofollow" title="Find out more about Project management made easy">Project management made easy</a>
+<p class="teaser">monday.com helps companies and organizations of all sizes and across all industries improve teamwork, project management, and workflows.</p>
+</div>
+</div>
+<div class="tiles">
+<div class="tile">
+<div class="description ">
+<div class="description-inner">
+Simplify the way your team works with monday.com, a cloud-based project management platform that provides customizable no-code solutions for a wide range of use-cases such as marketing, sales, operations, IT, HR, and more.
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="download standard">
+<a class="button green wide sfdl sfdl-lite" target="_blank" rel="nofollow" href="https://a.slashdotmedia.com/www/delivery/ck.php?oaparams=2__bannerid=49864__zoneid=47198__cb=b52fac708f__oadest=https%3A%2F%2Fmonday.com%2Flp%2Fprojectmanagement%2Fbundle%2F%3Futm_medium%3Dcpc%26utm_source%3Dsourceforge%26utm_campaign%3Dww-en-prm-workos-work_mgmt-generic-profile%26utm_adgroup%3Dprofile" data-zone="47188" data-slug="monday.com">Learn More</a>
+</div>
+</div>
+</section>
+<section class="row psp-section m-section-comm-details m-section-emphasized grey">
+<h3 class="as-h2 column small-12">
+<svg data-name="info-circle-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z" /></svg> Product Details</h3>
+<div class="list-outer column">
+<div>
+<div class="as-h3">System Requirements</div>
+<div class="list">
+<div>
+<svg data-name="check-regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z" /></svg> SaaS
+ </div>
+</div>
+</div>
+<div>
+<div class="as-h3">Training</div>
+<div class="list">
+<div>
+<svg data-name="check-regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z" /></svg> Documentation </div>
+<div>
+<svg data-name="check-regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z" /></svg> Live Online </div>
+</div>
+</div>
+<div>
+<div class="as-h3">Support</div>
+<div class="list">
+<div>
+<svg data-name="check-regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z" /></svg> Business Hours </div>
+<div>
+<svg data-name="check-regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z" /></svg> Online </div>
+</div>
+</div>
+</div>
+</section>
+<section class="row m-section-faqs">
+<div class="small-12 columns">
+<h2>
+<svg data-name="icon-faqs" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-173.000000, -1628.000000)"> <g transform="translate(173.000000, 1628.000000)"> <rect x="0" y="0" width="24" height="24"></rect> <path d="M19,3 L5,3 C3.9,3 3,3.9 3,5 L3,19 C3,20.1 3.9,21 5,21 L19,21 C20.1,21 21,20.1 21,19 L21,5 C21,3.9 20.1,3 19,3 Z M12.01,18 C11.31,18 10.75,17.44 10.75,16.74 C10.75,16.03 11.31,15.49 12.01,15.49 C12.72,15.49 13.26,16.03 13.26,16.74 C13.25,17.43 12.72,18 12.01,18 Z M15.02,10.6 C14.26,11.71 13.54,12.06 13.15,12.77 C12.99,13.06 12.93,13.25 12.93,14.18 L11.11,14.18 C11.11,13.69 11.03,12.89 11.42,12.2 C11.91,11.33 12.84,10.81 13.38,10.04 C13.95,9.23 13.63,7.71 12.01,7.71 C10.95,7.71 10.43,8.51 10.21,9.19 L8.56,8.49 C9.01,7.15 10.22,6 11.99,6 C13.47,6 14.48,6.67 15,7.52 C15.44,8.24 15.7,9.59 15.02,10.6 Z" fill="#000000" fill-rule="nonzero"></path> </g> </g> </g></svg> ECAP Frequently Asked Questions</h2>
+<div class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+<div class="accordion-item" data-accordion-item>
+<a class="accordion-title">
+Q: What kinds of users and organization types does ECAP work with?
+<div class="accordion-toggle">
+<svg data-name="down_carret" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><polygon fill="#333333" points="12,17.6 0,9.8 2.2,6.4 12,12.8 21.8,6.4 24,9.8 " /></svg>
+</div>
+</a>
+ <div class="features list accordion-content" data-tab-content style="display:none">
+ECAP works with these users and organization types: Mid Size Business, Small Business, Enterprise, Freelance, Nonprofit, and Government.
+</div>
+</div>
+<div class="accordion-item" data-accordion-item>
+<a class="accordion-title">
+Q: What languages does ECAP support in their product?
+<div class="accordion-toggle">
+<svg data-name="down_carret" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><polygon fill="#333333" points="12,17.6 0,9.8 2.2,6.4 12,12.8 21.8,6.4 24,9.8 " /></svg>
+</div>
+</a>
+<div class="features list accordion-content" data-tab-content style="display:none">
+ECAP supports these languages: English.
+</div>
+</div>
+<div class="accordion-item" data-accordion-item>
+<a class="accordion-title">
+Q: What kind of support options does ECAP offer?
+<div class="accordion-toggle">
+<svg data-name="down_carret" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><polygon fill="#333333" points="12,17.6 0,9.8 2.2,6.4 12,12.8 21.8,6.4 24,9.8 " /></svg>
+</div>
+</a>
+<div class="features list accordion-content" data-tab-content style="display:none">
+ECAP offers support via business hours and online.
+</div>
+</div>
+<div class="accordion-item" data-accordion-item>
+<a class="accordion-title">
+Q: What type of training does ECAP provide?
+<div class="accordion-toggle">
+<svg data-name="down_carret" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><polygon fill="#333333" points="12,17.6 0,9.8 2.2,6.4 12,12.8 21.8,6.4 24,9.8 " /></svg>
+</div>
+</a>
+<div class="features list accordion-content" data-tab-content style="display:none">
+ECAP provides training in the form of documentation and live online.
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="row psp-section collapsible-section m-section-pcfs m-section-emphasized grey">
+<h2 class="column">
+<svg data-name="list-alt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zM128 120c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm288-136v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12z" /></svg> ECAP Product Features</h2>
+<div class="small-12 columns">
+<div>
+<h3 class="as-h3" itemprop="applicationSubCategory">
+<a href="/software/foster-care/">Foster Care</a>
+<a class="toggle" id="toggler_feats_2593" data-toggle="feats_2593 toggler_feats_2593" data-toggler=".open">
+<svg data-name="down_carret" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><polygon fill="#333333" points="12,17.6 0,9.8 2.2,6.4 12,12.8 21.8,6.4 24,9.8 " /></svg>
+</a>
+</h3>
+<div id="feats_2593" class="features as-columns list hide" data-toggler=".hide">
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Online Applications
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Online Licensing Forms
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Checklists
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Payments Tracking
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Automated Reminders
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Respite Credits Tracking
+</div>
+
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Available Families Database
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Reporting
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Case Management
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Treatment Management
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Foster to Adopt
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Education Requirements Tracking
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Adoption Management
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Placement Management
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Child Intake
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Family Portal
+</div>
+</div>
+</div>
+<div>
+<h3 class="as-h3" itemprop="applicationSubCategory">
+<a href="/software/human-services/">Human Services</a>
+</h3>
+<div id="feats_1332" class="features as-columns list " data-toggler=".hide">
+<div class="feature has-feature" itemprop="featureList">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Child Welfare Management
+</div>
+<div class="feature has-feature" itemprop="featureList">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Reporting &amp; Statistics
+</div>
+<div class="feature has-feature" itemprop="featureList">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Time Tracking
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Case Management
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Certification &amp; Licensing
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Document Management
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Scheduling
+</div>
+<div class="feature ">
+<svg data-name="check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" /></svg>
+Training Management
+</div>
+</div>
+</div>
+</div>
+</section>
+</article>
+<div class="sterling">
+</div>
+</div>
+</div>
+<div class="l-gutter">
+</div>
+<div class="l-side-column">
+<div class="scroll-fixable">
+<section class="sterling">
+</section>
+<aside class="m-sidebar-widget m-project-list">
+<div class="as-header">Recommended Software</div>
+<div class="body">
+<ul>
+<li class="item">
+<a href="/software/product/ASI-Ware/" title="ASI-Ware">
+<div class="project-icon   ">
+<img alt="ASI-Ware" title="ASI-Ware" src="//a.fsdn.com/allura/s/childtrax/icon?1604101212?&amp;w=48" loading="lazy" /></div>
+</a>
+<div class="pinfo-content recommended">
+<a class="project-name" href="/software/product/ASI-Ware/" title="Learn more about ASI-Ware ">ASI-Ware</a>
+<div class="summary">
+ASI-Ware is a placement management system that enables users to monitor, manage, and report vital information for children in different residential and foster care locations. With ASI-Ware, foster care caseworkers will have more time to serve children families due to its simplified service...
+</div>
+</div>
+</li>
+<li class="item">
+<a href="/software/product/SAM-InReach/" title="SAM">
+<div class="project-icon   ">
+<img alt="SAM" title="SAM" src="//a.fsdn.com/allura/s/sam-inreach/icon?1637276631?&amp;w=48" loading="lazy" /></div>
+</a>
+<div class="pinfo-content recommended">
+<a class="project-name" href="/software/product/SAM-InReach/" title="Learn more about SAM ">SAM</a>
+<div class="summary">
+SAM is case management software designed for adoption and foster care. Save your agency and clients hours each week with a centralized, secure online database and powerful toolset that drives your mission. Find matches and families faster with customized reports and online forms. View, filter,...
+</div>
+</div>
+</li>
+<li class="item">
+<a href="/software/product/Noble-Child/" title="Noble Child">
+<div class="project-icon   ">
+<img alt="Noble Child" title="Noble Child" src="//a.fsdn.com/allura/s/noble-child-solutions/icon?1627652811?&amp;w=48" loading="lazy" /></div>
+</a>
+<div class="pinfo-content recommended">
+<a class="project-name" href="/software/product/Noble-Child/" title="Learn more about Noble Child ">Noble Child</a>
+<div class="summary">
+Drive higher outcomes you can measure. The child welfare information system that ensures best practices, scales across your organization, and delivers demonstrable ROI. Learn how Noble Child is evolving service delivery, compliance, accessibility, and security for child welfare. Ensure best...
+</div>
+</div>
+</li>
+</ul>
+</div>
+</aside>
+<aside class="m-sidebar-widget m-sidebar-compare">
+<div class="as-header">Compare This Software</div>
+<div class="body">
+<ul>
+<li class="item">
+<a href="/software/compare/ASI-Ware-vs-ECAP/">
+<div class="m-compare-vs-icons">
+<div>
+<div class="project-icon   ">
+<img alt="ASI-Ware" title="ASI-Ware" src="//a.fsdn.com/allura/s/childtrax/icon?1604101212?&amp;w=48" loading="lazy" /></div>
+ASI-Ware
+</div>
+<div class="label-vs">
+vs.
+</div>
+<div>
+<div class="project-icon   ">
+<img alt="ECAP" title="ECAP" src="//a.fsdn.com/allura/s/ecap/icon?1648177033?&amp;w=48" srcset="//a.fsdn.com/allura/s/ecap/icon?1648177033?&amp;w=72 1.5x
+        ,
+            //a.fsdn.com/allura/s/ecap/icon?1648177033?&amp;w=96 2x" loading="lazy" /></div>
+ECAP
+</div>
+</div>
+</a>
+</li>
+<li class="item">
+<a href="/software/compare/ECAP-vs-SAM-InReach/">
+<div class="m-compare-vs-icons">
+<div>
+<div class="project-icon   ">
+<img alt="SAM" title="SAM" src="//a.fsdn.com/allura/s/sam-inreach/icon?1637276631?&amp;w=48" loading="lazy" /></div>
+SAM
+</div>
+<div class="label-vs">
+vs.
+</div>
+<div>
+<div class="project-icon   ">
+<img alt="ECAP" title="ECAP" src="//a.fsdn.com/allura/s/ecap/icon?1648177033?&amp;w=48" srcset="//a.fsdn.com/allura/s/ecap/icon?1648177033?&amp;w=72 1.5x
+        ,
+            //a.fsdn.com/allura/s/ecap/icon?1648177033?&amp;w=96 2x" loading="lazy" /></div>
+ECAP
+</div>
+</div>
+</a>
+</li>
+<li class="item">
+<a href="/software/compare/ECAP-vs-Noble-Child/">
+<div class="m-compare-vs-icons">
+<div>
+<div class="project-icon   ">
+<img alt="Noble Child" title="Noble Child" src="//a.fsdn.com/allura/s/noble-child-solutions/icon?1627652811?&amp;w=48" loading="lazy" /></div>
+Noble Child
+</div>
+<div class="label-vs">
+vs.
+</div>
+<div>
+<div class="project-icon   ">
+<img alt="ECAP" title="ECAP" src="//a.fsdn.com/allura/s/ecap/icon?1648177033?&amp;w=48" srcset="//a.fsdn.com/allura/s/ecap/icon?1648177033?&amp;w=72 1.5x
+        ,
+            //a.fsdn.com/allura/s/ecap/icon?1648177033?&amp;w=96 2x" loading="lazy" /></div>
+ECAP
+</div>
+</div>
+</a>
+</li>
+<li class="item">
+ <a href="/software/compare/ECAP-vs-extendedReach/">
+<div class="m-compare-vs-icons">
+<div>
+<div class="project-icon   ">
+<img alt="extendedReach" title="extendedReach" src="//a.fsdn.com/allura/s/extendedreach/icon?1629779276?&amp;w=48" loading="lazy" /></div>
+extendedReach
+</div>
+<div class="label-vs">
+vs.
+</div>
+<div>
+<div class="project-icon   ">
+<img alt="ECAP" title="ECAP" src="//a.fsdn.com/allura/s/ecap/icon?1648177033?&amp;w=48" srcset="//a.fsdn.com/allura/s/ecap/icon?1648177033?&amp;w=72 1.5x
+        ,
+            //a.fsdn.com/allura/s/ecap/icon?1648177033?&amp;w=96 2x" loading="lazy" /></div>
+ECAP
+</div>
+</div>
+</a>
+</li>
+<li class="item">
+<a href="/software/compare/CSM-Human-Services-vs-ECAP/">
+<div class="m-compare-vs-icons">
+<div>
+<div class="project-icon   ">
+<img alt="CSM Human Services" title="CSM Human Services" src="//a.fsdn.com/allura/s/csm-human-services/icon?1604099035?&amp;w=48" loading="lazy" /></div>
+CSM Human Services
+</div>
+<div class="label-vs">
+vs.
+</div>
+<div>
+<div class="project-icon   ">
+<img alt="ECAP" title="ECAP" src="//a.fsdn.com/allura/s/ecap/icon?1648177033?&amp;w=48" srcset="//a.fsdn.com/allura/s/ecap/icon?1648177033?&amp;w=72 1.5x
+        ,
+            //a.fsdn.com/allura/s/ecap/icon?1648177033?&amp;w=96 2x" loading="lazy" /></div>
+ECAP
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</aside>
+<section class="sterling">
+</section>
+</div>
+<div class="sterling">
+</div>
+</div>
+</div>
+<footer class="sandiego">
+<div class="as-row">
+<div class="footer-wrapper">
+<nav aria-label="Site Links" role="navigation">
+<section>
+<div class="as-h2">SourceForge</div>
+<ul>
+<li><a href="/directory/" title="Open Source Software Directory">Open Source Software</a></li>
+<li><a href="/software/" title="Business Software Directory">Business Software</a></li>
+<li><a href="/software/vendors/new">Add Your Software</a></li>
+<li><a href="/software/vendors/pricing/">Business Software Advertising</a></li>
+</ul>
+</section>
+</nav>
+<nav aria-label="Company Links" role="navigation">
+<section>
+<div class="as-h2">Company</div>
+<ul>
+<li><a href="/about" title="Create a Project">About</a></li>
+<li><a href="/about/leadership" title="Open Source Software Directory">Team</a></li>
+<li class="h-card">
+<address>
+<span class="p-name p-org">SourceForge Headquarters</span><br>
+<span class="p-street-address">225 Broadway Suite 1600</span><br>
+<span class="p-locality">San Diego, CA <span class="p-postal-code">92101</span></span><br>
+<span class="p-tel">+1 (858) 454-5900</span><br>
+</address>
+</li>
+<li id="social">
+<span></span>
+<a href="https://twitter.com/sourceforge" class="twitter" rel="nofollow" target="_blank">
+<svg class="vertical-icon-fix" data-name="twitter" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" /></svg></a>
+<a href="https://www.facebook.com/sourceforgenet/" class="facebook" rel="nofollow" target="_blank">
+<svg data-name="facebook" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" /></svg></a>
+<a href="https://www.linkedin.com/company/sourceforge.net" class="linkedin" rel="nofollow" target="_blank">
+<svg data-name="linkedin" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z" /></svg></a>
+<span></span>
+</li>
+</ul>
+</section>
+</nav>
+<nav aria-label="Resources Links" role="navigation">
+<section>
+<div class="as-h2">Resources</div>
+<ul>
+<li><a href="/support" title="Support Section">Support</a></li>
+<li><a href="/p/forge/documentation/Docs%20Home/" title="Site Documentation">Site Documentation</a></li>
+<li><a href="https://twitter.com/sfnet_ops" title="Site Status" rel="nofollow">Site Status</a></li>
+</ul>
+</section>
+</nav>
+<section class="footer-logo">
+<a href="/" title="Home" class="sf-logo">
+<svg data-name="sf-logo-full" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 653 102.6" style="enable-background:new 0 0 653 102.6;" xml:space="preserve"><path class="st0" d="M66.9,54.5c0-19.1-6.8-27.8-10.4-31.1c-0.7-0.6-1.8-0.1-1.7,0.9c0.7,10.8-12.9,13.5-12.9,30.4h0 c0,0,0,0.1,0,0.1c0,10.3,7.8,18.7,17.4,18.7c9.6,0,17.4-8.4,17.4-18.7c0,0,0-0.1,0-0.1h0c0-4.8-1.8-9.4-3.6-12.8 c-0.4-0.7-1.4-0.4-1.3,0.2C75.1,56.7,66.9,65.7,66.9,54.5z" /><g> <path class="st0" d="M46.2,94.8c-0.4,0-0.9-0.2-1.2-0.5L0.5,49.8c-0.6-0.6-0.6-1.7,0-2.4l47-47C47.8,0.2,48.2,0,48.6,0h13.5 c0.8,0,1.3,0.5,1.5,1c0.2,0.5,0.2,1.2-0.4,1.8L19.1,47c-0.9,0.9-0.9,2.3,0,3.2L54,85.2c0.6,0.6,0.6,1.7,0,2.4l-6.7,6.8 C47,94.6,46.6,94.8,46.2,94.8z" /></g><g> <path class="st0" d="M55.1,102.6c-0.8,0-1.3-0.5-1.5-1c-0.2-0.5-0.2-1.2,0.4-1.8l44.2-44.2c0.4-0.4,0.7-1,0.7-1.6 c0-0.6-0.2-1.2-0.7-1.6L63.2,17.4c-0.6-0.6-0.6-1.7,0-2.4l6.8-6.8c0.3-0.3,0.7-0.5,1.2-0.5S72,8,72.3,8.3l44.4,44.5 c0.3,0.3,0.5,0.7,0.5,1.2s-0.2,0.9-0.5,1.2l-47,47c-0.3,0.3-0.7,0.5-1.2,0.5H55.1z" /></g><g> <g> <path class="st1" d="M167.2,32c-0.2,0.4-0.5,0.6-1,0.6c-0.3,0-0.7-0.2-1.2-0.7c-0.5-0.5-1.2-1-2-1.5c-0.9-0.6-1.9-1.1-3.2-1.5 c-1.3-0.5-2.9-0.7-4.8-0.7c-1.9,0-3.5,0.3-5,0.8c-1.4,0.5-2.6,1.3-3.6,2.2s-1.7,2-2.2,3.2c-0.5,1.2-0.8,2.5-0.8,3.8 c0,1.8,0.4,3.2,1.1,4.4c0.7,1.1,1.7,2.1,3,2.9c1.2,0.8,2.6,1.5,4.2,2c1.6,0.6,3.2,1.1,4.8,1.6c1.6,0.5,3.2,1.1,4.8,1.8 c1.6,0.6,2.9,1.5,4.2,2.4s2.2,2.2,3,3.6c0.7,1.4,1.1,3.2,1.1,5.3c0,2.2-0.4,4.2-1.1,6.1c-0.7,1.9-1.8,3.6-3.2,5 c-1.4,1.4-3.2,2.5-5.2,3.4c-2.1,0.8-4.4,1.2-7,1.2c-3.4,0-6.4-0.6-8.8-1.8c-2.5-1.2-4.6-2.9-6.5-5l1-1.6c0.3-0.4,0.6-0.5,1-0.5 c0.2,0,0.5,0.1,0.8,0.4c0.3,0.3,0.8,0.7,1.2,1.1c0.5,0.4,1.1,0.9,1.8,1.4c0.7,0.5,1.5,1,2.4,1.4c0.9,0.4,1.9,0.8,3.1,1.1 c1.2,0.3,2.5,0.4,4,0.4c2.1,0,3.9-0.3,5.5-0.9c1.6-0.6,3-1.5,4.1-2.5s2-2.4,2.6-3.8c0.6-1.5,0.9-3.1,0.9-4.7 c0-1.8-0.4-3.3-1.1-4.5c-0.7-1.2-1.7-2.2-3-3c-1.2-0.8-2.6-1.5-4.2-2c-1.6-0.5-3.2-1.1-4.8-1.6c-1.6-0.5-3.2-1.1-4.8-1.7 c-1.6-0.6-2.9-1.4-4.2-2.4c-1.2-1-2.2-2.2-3-3.7c-0.7-1.5-1.1-3.3-1.1-5.6c0-1.7,0.3-3.4,1-5c0.7-1.6,1.6-3,2.9-4.3 c1.3-1.2,2.8-2.2,4.7-3c1.9-0.7,4-1.1,6.4-1.1c2.7,0,5.1,0.4,7.3,1.3c2.1,0.9,4.1,2.2,5.9,3.9L167.2,32z" /> <path class="st2" d="M152.9,78.8c-3.5,0-6.6-0.6-9.1-1.9c-2.5-1.2-4.8-3-6.7-5.1l-0.3-0.3l1.3-2c0.6-0.7,1.1-0.8,1.5-0.8 c0.4,0,0.8,0.2,1.2,0.6c0.3,0.3,0.8,0.7,1.3,1.1c0.5,0.4,1.1,0.9,1.7,1.4c0.7,0.5,1.4,0.9,2.3,1.3c0.9,0.4,1.9,0.8,3,1 c1.1,0.3,2.4,0.4,3.9,0.4c2,0,3.8-0.3,5.3-0.9c1.5-0.6,2.8-1.4,3.9-2.4c1-1,1.9-2.2,2.4-3.6c0.6-1.4,0.8-2.9,0.8-4.5 c0-1.7-0.3-3.1-1-4.2c-0.7-1.1-1.6-2-2.8-2.8c-1.2-0.8-2.5-1.4-4-1.9c-1.5-0.5-3.1-1.1-4.8-1.6c-1.7-0.5-3.3-1.1-4.8-1.7 c-1.6-0.7-3.1-1.5-4.3-2.5c-1.3-1-2.3-2.4-3.1-3.9c-0.8-1.6-1.2-3.5-1.2-5.8c0-1.8,0.3-3.6,1-5.3c0.7-1.7,1.7-3.2,3-4.5 c1.3-1.3,3-2.3,4.9-3.1c1.9-0.8,4.2-1.2,6.6-1.2c2.8,0,5.3,0.4,7.5,1.3c2.2,0.9,4.2,2.3,6.1,4.1l0.3,0.3l-1.1,2.1 c-0.6,1.1-1.7,1.4-3.1,0.1c-0.5-0.4-1.1-0.9-2-1.4c-0.8-0.5-1.9-1-3.1-1.5c-1.2-0.4-2.7-0.7-4.6-0.7c-1.8,0-3.4,0.3-4.8,0.8 c-1.3,0.5-2.5,1.2-3.4,2.1c-0.9,0.9-1.6,1.9-2.1,3c-0.5,1.1-0.7,2.4-0.7,3.6c0,1.6,0.3,3,1,4c0.7,1.1,1.6,2,2.8,2.8 c1.2,0.8,2.5,1.4,4,2c1.5,0.5,3.1,1.1,4.8,1.6c1.6,0.5,3.3,1.1,4.8,1.8c1.6,0.7,3.1,1.5,4.3,2.5c1.3,1,2.3,2.3,3.1,3.8 c0.8,1.5,1.2,3.4,1.2,5.6c0,2.2-0.4,4.4-1.2,6.4c-0.8,2-1.9,3.7-3.4,5.2c-1.5,1.5-3.3,2.6-5.4,3.5 C158.1,78.3,155.6,78.8,152.9,78.8z M138.4,71.3c1.7,1.9,3.7,3.4,6,4.5c2.4,1.2,5.3,1.8,8.6,1.8c2.5,0,4.8-0.4,6.8-1.2 c2-0.8,3.6-1.9,5-3.2c1.3-1.3,2.4-3,3.1-4.8c0.7-1.8,1.1-3.8,1.1-5.9c0-2-0.4-3.7-1-5.1c-0.7-1.3-1.6-2.5-2.8-3.4 c-1.2-0.9-2.5-1.7-4-2.4c-1.5-0.6-3.1-1.2-4.7-1.8c-1.6-0.5-3.2-1.1-4.8-1.6c-1.6-0.6-3-1.3-4.3-2.1c-1.3-0.8-2.3-1.9-3.1-3.1 c-0.8-1.2-1.2-2.8-1.2-4.7c0-1.4,0.3-2.8,0.8-4.1c0.5-1.3,1.3-2.5,2.3-3.4c1-1,2.3-1.8,3.8-2.3c1.5-0.6,3.3-0.8,5.2-0.8 c1.9,0,3.6,0.2,5,0.7c1.3,0.5,2.5,1,3.3,1.6c0.9,0.6,1.6,1.1,2.1,1.6c0.6,0.5,0.8,0.5,0.8,0.5c0.1,0,0.3,0,0.4-0.3l0.7-1.3 c-1.6-1.5-3.4-2.7-5.3-3.5c-2.1-0.8-4.4-1.2-7-1.2c-2.3,0-4.4,0.4-6.2,1.1c-1.8,0.7-3.3,1.7-4.5,2.8c-1.2,1.2-2.1,2.5-2.8,4.1 c-0.6,1.5-0.9,3.1-0.9,4.8c0,2.1,0.4,3.9,1.1,5.3c0.7,1.4,1.6,2.6,2.8,3.5c1.2,0.9,2.5,1.7,4,2.3c1.5,0.6,3.1,1.2,4.7,1.7 c1.6,0.5,3.2,1,4.8,1.6c1.6,0.6,3,1.2,4.3,2.1c1.3,0.8,2.4,1.9,3.1,3.2c0.8,1.3,1.2,2.9,1.2,4.9c0,1.8-0.3,3.4-0.9,5 c-0.6,1.6-1.5,2.9-2.7,4c-1.2,1.1-2.6,2-4.3,2.7c-1.7,0.6-3.6,1-5.7,1c-1.5,0-2.9-0.2-4.2-0.5c-1.2-0.3-2.3-0.7-3.2-1.1 c-0.9-0.4-1.8-0.9-2.5-1.5c-0.7-0.5-1.3-1-1.8-1.4c-0.5-0.4-0.9-0.8-1.2-1.1c-0.3-0.3-0.5-0.3-0.5-0.3c-0.1,0-0.3,0-0.5,0.3 L138.4,71.3z" /> </g> <g> <path class="st1" d="M226.7,51.6c0,4-0.6,7.6-1.8,10.9c-1.2,3.3-2.9,6.1-5.1,8.4c-2.2,2.3-4.8,4.1-7.8,5.4 c-3,1.3-6.4,1.9-10.1,1.9c-3.6,0-7-0.6-10-1.9c-3-1.3-5.6-3-7.8-5.4c-2.2-2.3-3.9-5.1-5.1-8.4c-1.2-3.3-1.8-6.9-1.8-10.9 c0-4,0.6-7.6,1.8-10.9c1.2-3.3,2.9-6.1,5.1-8.4c2.2-2.3,4.8-4.1,7.8-5.4c3-1.3,6.4-1.9,10-1.9c3.7,0,7.1,0.6,10.1,1.9 c3,1.3,5.6,3,7.8,5.4c2.2,2.3,3.9,5.1,5.1,8.4C226.1,44,226.7,47.6,226.7,51.6z M222.8,51.6c0-3.6-0.5-6.9-1.5-9.8 c-1-2.9-2.4-5.3-4.2-7.3c-1.8-2-4-3.5-6.6-4.6c-2.6-1.1-5.4-1.6-8.5-1.6c-3.1,0-5.9,0.5-8.5,1.6c-2.6,1.1-4.8,2.6-6.6,4.6 c-1.8,2-3.3,4.4-4.3,7.3c-1,2.9-1.5,6.1-1.5,9.8c0,3.6,0.5,6.9,1.5,9.8c1,2.9,2.4,5.3,4.3,7.3c1.8,2,4,3.5,6.6,4.6 c2.6,1.1,5.4,1.6,8.5,1.6c3.1,0,6-0.5,8.5-1.6c2.6-1,4.8-2.6,6.6-4.6c1.8-2,3.2-4.4,4.2-7.3C222.3,58.5,222.8,55.3,222.8,51.6z" /> <path class="st2" d="M202,78.7c-3.7,0-7.2-0.7-10.2-1.9c-3.1-1.3-5.8-3.1-8-5.5c-2.2-2.4-4-5.2-5.2-8.6c-1.2-3.3-1.9-7.1-1.9-11.1 c0-4,0.6-7.8,1.9-11.1c1.2-3.3,3-6.2,5.2-8.6c2.2-2.4,4.9-4.2,8-5.5c3.1-1.3,6.5-2,10.2-2c3.8,0,7.2,0.7,10.3,1.9 c3.1,1.3,5.8,3.1,8,5.5c2.2,2.4,4,5.3,5.2,8.6c1.2,3.3,1.8,7,1.8,11.1c0,4.1-0.6,7.8-1.8,11.1c-1.2,3.3-3,6.2-5.2,8.6 c-2.2,2.4-4.9,4.2-8,5.5C209.2,78.1,205.7,78.7,202,78.7z M202,25.7c-3.5,0-6.8,0.6-9.8,1.9c-2.9,1.2-5.5,3-7.6,5.2 c-2.1,2.2-3.8,5-4.9,8.2c-1.2,3.2-1.8,6.8-1.8,10.7c0,3.9,0.6,7.5,1.8,10.7c1.2,3.2,2.8,5.9,4.9,8.2c2.1,2.2,4.7,4,7.6,5.2 c2.9,1.2,6.2,1.8,9.8,1.8c3.6,0,6.9-0.6,9.8-1.8c2.9-1.2,5.5-3,7.6-5.2c2.1-2.2,3.8-5,4.9-8.1c1.2-3.2,1.8-6.8,1.8-10.7 c0-3.9-0.6-7.5-1.8-10.7c-1.2-3.2-2.8-5.9-4.9-8.2c-2.1-2.2-4.7-4-7.6-5.2C208.9,26.3,205.6,25.7,202,25.7z" /> </g> <g> <path class="st1" d="M256.4,74.9c2.5,0,4.7-0.4,6.7-1.3c2-0.9,3.6-2.1,5-3.6c1.4-1.5,2.4-3.4,3.1-5.4c0.7-2.1,1.1-4.3,1.1-6.8 V25.7h3.7v32.1c0,2.9-0.5,5.5-1.4,8c-0.9,2.5-2.2,4.6-3.9,6.5c-1.7,1.8-3.8,3.3-6.2,4.3c-2.4,1-5.2,1.6-8.2,1.6 c-3,0-5.8-0.5-8.2-1.6c-2.4-1.1-4.5-2.5-6.2-4.3c-1.7-1.8-3-4-3.9-6.5c-0.9-2.5-1.4-5.2-1.4-8V25.7h3.8v32c0,2.4,0.4,4.7,1.1,6.8 c0.7,2.1,1.8,3.9,3.1,5.4c1.4,1.5,3,2.7,5,3.6C251.6,74.5,253.9,74.9,256.4,74.9z" /> <path class="st2" d="M256.4,78.8c-3.1,0-5.9-0.5-8.4-1.6c-2.5-1.1-4.7-2.6-6.4-4.5c-1.7-1.9-3.1-4.2-4-6.7 c-0.9-2.5-1.4-5.3-1.4-8.2V25.1h5v32.7c0,2.3,0.4,4.5,1,6.6c0.7,2,1.7,3.8,3,5.2c1.3,1.5,2.9,2.6,4.8,3.5c1.9,0.8,4,1.3,6.4,1.3 c2.4,0,4.6-0.4,6.4-1.2c1.9-0.8,3.5-2,4.8-3.5c1.3-1.5,2.3-3.2,3-5.2c0.7-2,1-4.2,1-6.6V25.1h5v32.7c0,2.9-0.5,5.7-1.4,8.2 c-0.9,2.5-2.3,4.8-4,6.7c-1.7,1.9-3.9,3.4-6.4,4.5C262.3,78.3,259.5,78.8,256.4,78.8z M237.3,26.3v31.5c0,2.8,0.4,5.4,1.3,7.8 c0.9,2.4,2.1,4.5,3.8,6.3c1.6,1.8,3.6,3.2,6,4.2c2.3,1,5,1.5,8,1.5c2.9,0,5.6-0.5,8-1.5c2.3-1,4.4-2.4,6-4.2 c1.6-1.8,2.9-3.9,3.8-6.3c0.9-2.4,1.3-5,1.3-7.8V26.3h-2.5v31.5c0,2.5-0.4,4.8-1.1,7c-0.7,2.2-1.8,4.1-3.3,5.7 c-1.4,1.6-3.2,2.9-5.2,3.8c-2,0.9-4.4,1.4-6.9,1.4c-2.6,0-4.9-0.5-6.9-1.4c-2-0.9-3.8-2.2-5.2-3.8c-1.4-1.6-2.5-3.5-3.2-5.7 c-0.7-2.1-1.1-4.5-1.1-7V26.3H237.3z" /> </g> <g> <path class="st1" d="M297.5,51.3c1,0,0.9,0,0.9,0l2.2,0c2.3,0,4.4-0.3,6.2-0.8c1.8-0.6,3.4-1.3,4.6-2.4c1.3-1,2.2-2.3,2.9-3.7 c0.7-1.4,1-3.1,1-4.9c0-3.7-1.2-6.4-3.6-8.2c-2.4-1.8-5.9-2.7-10.6-2.7h-9.5v22.7v2.8v23.5h-3.7V25.7h13.2c6,0,10.5,1.2,13.4,3.5 c3,2.3,4.4,5.7,4.4,10.2c0,2-0.3,3.8-1,5.4c-0.7,1.6-1.7,3.1-3,4.3c-1.3,1.2-2.8,2.3-4.6,3c-1.8,0.8-3.9,1.3-6.1,1.6 c0.6,0.4,1.1,0.9,1.6,1.5l17.9,22.4h-3.3c-0.4,0-0.7-0.1-1-0.2c-0.3-0.1-0.6-0.4-0.8-0.7l-16.6-21c-0.4-0.5-0.9-0.9-1.3-1.1 c-0.5-0.2-3.4-0.3-4.4-0.3C296.3,51.6,296.7,51.3,297.5,51.3z" /> <path class="st2" d="M325,78.2h-4.5c-0.5,0-0.9-0.1-1.3-0.3c-0.4-0.2-0.7-0.5-1-0.9l-16.6-21c-0.4-0.5-0.7-0.8-1.1-1 c-0.4-0.1-2.8-0.3-4.1-0.3h-0.6v-2.6c0-0.9,0.2-1.4,1.8-1.4c0.9,0,1,0,1,0l2.2,0c2.2,0,4.2-0.3,6-0.8c1.7-0.5,3.2-1.3,4.4-2.3 c1.2-1,2.1-2.1,2.7-3.5c0.6-1.4,0.9-2.9,0.9-4.6c0-3.5-1.1-6-3.4-7.7c-2.3-1.7-5.7-2.6-10.2-2.6h-8.9v48.9h-5V25.1h13.9 c6.1,0,10.7,1.2,13.8,3.6c3.1,2.4,4.7,6,4.7,10.7c0,2.1-0.4,4-1.1,5.7c-0.7,1.7-1.8,3.2-3.1,4.5c-1.3,1.3-3,2.3-4.8,3.2 c-1.5,0.6-3.1,1.1-4.9,1.4c0.2,0.2,0.4,0.4,0.6,0.7L325,78.2z M296.9,53.5c1.1,0,3.4,0.1,4,0.4c0.6,0.3,1.1,0.7,1.6,1.3l16.6,21 c0.2,0.3,0.4,0.5,0.6,0.6c0.2,0.1,0.4,0.2,0.7,0.2h2l-17.1-21.4c-0.4-0.6-0.9-1-1.4-1.3l-1.5-0.9l1.8-0.2c2.2-0.2,4.2-0.7,5.9-1.5 c1.7-0.8,3.2-1.7,4.5-2.9c1.2-1.2,2.2-2.5,2.8-4.1c0.6-1.6,1-3.3,1-5.2c0-4.3-1.4-7.5-4.2-9.7c-2.8-2.2-7.2-3.3-13-3.3h-12.6V77 h2.5V28h10.1c4.7,0,8.4,0.9,10.9,2.8c2.6,1.9,3.9,4.8,3.9,8.7c0,1.9-0.4,3.6-1,5.1c-0.7,1.5-1.7,2.8-3.1,3.9 c-1.3,1.1-2.9,1.9-4.8,2.5c-1.9,0.6-4,0.9-6.4,0.9l-2.2,0c-0.1,0-0.2,0-0.9,0C297.3,51.9,297,51.9,296.9,53.5z" /> </g> <g> <path class="st1" d="M367.6,68.8c0.2,0,0.5,0.1,0.6,0.3l1.5,1.6c-1.1,1.1-2.2,2.2-3.5,3.1c-1.3,0.9-2.7,1.7-4.2,2.3 c-1.5,0.6-3.2,1.1-4.9,1.5c-1.8,0.4-3.8,0.5-5.9,0.5c-3.6,0-6.9-0.6-9.9-1.9c-3-1.3-5.6-3-7.7-5.4c-2.1-2.3-3.8-5.1-5-8.4 c-1.2-3.3-1.8-6.9-1.8-10.9c0-3.9,0.6-7.5,1.9-10.8c1.2-3.3,3-6,5.2-8.4c2.2-2.3,4.9-4.1,8-5.4c3.1-1.3,6.6-1.9,10.3-1.9 c1.9,0,3.6,0.1,5.2,0.4c1.6,0.3,3,0.7,4.4,1.2c1.4,0.5,2.6,1.2,3.8,2c1.2,0.8,2.4,1.7,3.5,2.7l-1.1,1.6c-0.2,0.3-0.5,0.4-0.9,0.4 c-0.2,0-0.5-0.1-0.8-0.4c-0.3-0.3-0.8-0.6-1.3-1c-0.5-0.4-1.2-0.8-1.9-1.2c-0.7-0.5-1.6-0.9-2.7-1.2c-1-0.4-2.2-0.7-3.6-1 c-1.3-0.3-2.9-0.4-4.6-0.4c-3.2,0-6.1,0.5-8.7,1.6c-2.6,1.1-4.9,2.6-6.8,4.7c-1.9,2-3.4,4.5-4.5,7.3s-1.6,6.1-1.6,9.7 c0,3.7,0.5,6.9,1.6,9.8c1.1,2.9,2.5,5.3,4.4,7.3c1.9,2,4.1,3.5,6.6,4.6c2.5,1.1,5.3,1.6,8.2,1.6c1.9,0,3.5-0.1,5-0.4 c1.5-0.2,2.8-0.6,4-1.1c1.2-0.5,2.4-1.1,3.4-1.8c1.1-0.7,2.1-1.5,3.1-2.5c0.1-0.1,0.2-0.2,0.3-0.2 C367.3,68.9,367.5,68.8,367.6,68.8z" /> <path class="st2" d="M351.1,78.8c-3.7,0-7.1-0.7-10.1-1.9c-3.1-1.3-5.7-3.1-7.9-5.5c-2.2-2.4-3.9-5.2-5.1-8.6 c-1.2-3.3-1.8-7.1-1.8-11.1c0-4,0.6-7.7,1.9-11c1.3-3.3,3.1-6.2,5.3-8.6c2.3-2.4,5.1-4.3,8.2-5.6c3.2-1.3,6.7-2,10.6-2 c1.9,0,3.7,0.1,5.3,0.4c1.6,0.3,3.1,0.7,4.5,1.2c1.4,0.5,2.7,1.2,3.9,2c1.2,0.8,2.4,1.7,3.6,2.8l0.4,0.4l-1.4,2.1 c-0.2,0.3-0.6,0.7-1.4,0.7c-0.4,0-0.7-0.2-1.2-0.5c-0.3-0.3-0.8-0.6-1.3-0.9c-0.5-0.4-1.1-0.8-1.9-1.2c-0.7-0.4-1.6-0.8-2.6-1.2 c-1-0.4-2.2-0.7-3.5-0.9c-1.3-0.2-2.8-0.4-4.5-0.4c-3.1,0-5.9,0.5-8.5,1.6c-2.5,1.1-4.8,2.6-6.6,4.5c-1.8,1.9-3.3,4.3-4.3,7.1 c-1,2.8-1.6,6-1.6,9.4c0,3.6,0.5,6.8,1.5,9.6c1,2.8,2.4,5.2,4.2,7.1c1.8,1.9,3.9,3.4,6.4,4.4c2.4,1,5.1,1.5,8,1.5 c1.8,0,3.5-0.1,4.9-0.4c1.4-0.2,2.7-0.6,3.9-1.1c1.2-0.5,2.3-1.1,3.3-1.7c1-0.7,2-1.5,3-2.4c0.2-0.2,0.3-0.2,0.5-0.3 c0.5-0.3,1.3-0.2,1.7,0.3l1.9,2l-0.4,0.4c-1.1,1.2-2.3,2.2-3.6,3.2c-1.3,0.9-2.7,1.8-4.3,2.4c-1.5,0.7-3.2,1.2-5.1,1.5 C355.3,78.6,353.3,78.8,351.1,78.8z M352.2,25.7c-3.7,0-7.1,0.6-10.1,1.9c-3,1.2-5.7,3-7.8,5.3c-2.2,2.3-3.9,5-5.1,8.2 c-1.2,3.2-1.8,6.7-1.8,10.6c0,3.9,0.6,7.5,1.8,10.7c1.2,3.2,2.8,5.9,4.9,8.2c2.1,2.2,4.6,4,7.5,5.2c2.9,1.2,6.1,1.8,9.6,1.8 c2.1,0,4-0.2,5.8-0.5c1.7-0.3,3.4-0.8,4.8-1.5c1.5-0.6,2.8-1.4,4-2.3c1.1-0.8,2.1-1.7,3-2.6l-1.1-1.2c-0.1-0.1-0.2-0.1-0.3,0 c-0.1,0-0.2,0.1-0.3,0.2c-1,0.9-2.1,1.8-3.2,2.5c-1.1,0.7-2.3,1.4-3.5,1.9c-1.3,0.5-2.7,0.9-4.1,1.1c-1.5,0.2-3.2,0.4-5.1,0.4 c-3,0-5.9-0.6-8.5-1.6c-2.6-1.1-4.9-2.7-6.8-4.7c-1.9-2-3.4-4.6-4.5-7.5c-1.1-2.9-1.6-6.3-1.6-10c0-3.6,0.5-6.9,1.6-9.9 c1.1-2.9,2.6-5.5,4.6-7.5c2-2.1,4.3-3.7,7-4.8c2.7-1.1,5.7-1.7,8.9-1.7c1.7,0,3.3,0.1,4.7,0.4c1.4,0.3,2.6,0.6,3.7,1 c1.1,0.4,2,0.8,2.8,1.3c0.8,0.5,1.4,0.9,1.9,1.3c0.5,0.4,1,0.7,1.3,1c0.3,0.3,0.5,0.3,0.5,0.3c0.3,0,0.4-0.1,0.4-0.2l0.8-1.2 c-1-0.9-2-1.6-3-2.3c-1.2-0.8-2.4-1.4-3.7-1.9c-1.3-0.5-2.8-0.9-4.3-1.2C355.7,25.9,354,25.7,352.2,25.7z" /> </g> <g> <path class="st1" d="M410.3,25.7v3.1H383v21h22.7v3H383v21.6h27.3v3.1h-31.1V25.7H410.3z" /> <path class="st2" d="M410.9,78.2h-32.3V25.1h32.3v4.3h-27.3v19.7h22.7v4.3h-22.7v20.4h27.3V78.2z M379.8,77h29.9v-1.9h-27.3V52.2 h22.7v-1.8h-22.7V28.2h27.3v-1.9h-29.9V77z" /> </g> <g> <path class="st1" d="M456.8,25.1V33h-23.5v15.7h19.8v7.9h-19.8v21.6h-9.9v-53H456.8z" /> </g> <g> <path class="st1" d="M514.3,51.6c0,3.9-0.6,7.5-1.9,10.8c-1.3,3.3-3.1,6.2-5.5,8.6c-2.3,2.4-5.2,4.3-8.5,5.7c-3.3,1.4-7,2-11,2 c-4,0-7.7-0.7-11-2c-3.3-1.4-6.1-3.2-8.5-5.7c-2.4-2.4-4.2-5.3-5.5-8.6s-1.9-6.9-1.9-10.8s0.6-7.5,1.9-10.8 c1.3-3.3,3.1-6.2,5.5-8.6c2.4-2.4,5.2-4.3,8.5-5.7c3.3-1.4,7-2,11-2c4,0,7.7,0.7,11,2.1c3.3,1.4,6.1,3.3,8.5,5.7 c2.3,2.4,4.2,5.3,5.5,8.6C513.6,44.1,514.3,47.7,514.3,51.6z M504.2,51.6c0-2.9-0.4-5.5-1.2-7.8c-0.8-2.3-1.9-4.3-3.3-5.9 c-1.4-1.6-3.2-2.8-5.3-3.7c-2.1-0.9-4.4-1.3-7-1.3c-2.6,0-4.9,0.4-7,1.3c-2.1,0.9-3.8,2.1-5.3,3.7c-1.5,1.6-2.6,3.6-3.4,5.9 c-0.8,2.3-1.2,4.9-1.2,7.8s0.4,5.5,1.2,7.8c0.8,2.3,1.9,4.3,3.4,5.9c1.5,1.6,3.2,2.8,5.3,3.7c2.1,0.9,4.4,1.3,7,1.3 c2.6,0,4.9-0.4,7-1.3c2.1-0.9,3.8-2.1,5.3-3.7c1.4-1.6,2.5-3.6,3.3-5.9C503.8,57.1,504.2,54.5,504.2,51.6z" /> </g> <g> <path class="st1" d="M534.9,50.4l2.3,0c1.9,0,3.5-0.2,4.9-0.7c1.4-0.5,2.5-1.1,3.4-1.9c0.9-0.8,1.6-1.8,2-2.9 c0.4-1.1,0.7-2.4,0.7-3.7c0-2.7-0.9-4.8-2.7-6.2c-1.8-1.4-4.5-2.2-8.1-2.2H531v17.6v7.1v20.7h-9.9v-53h16.2c3.6,0,6.7,0.4,9.3,1.1 c2.6,0.7,4.7,1.8,6.3,3.1c1.6,1.3,2.9,3,3.6,4.8c0.8,1.9,1.2,3.9,1.2,6.2c0,1.8-0.3,3.5-0.8,5.1c-0.5,1.6-1.3,3-2.3,4.3 c-1,1.3-2.2,2.4-3.7,3.4c-1.5,1-3.1,1.8-5,2.3c1.2,0.7,2.3,1.7,3.2,3l13.3,19.6h-8.9c-0.9,0-1.6-0.2-2.2-0.5 c-0.6-0.3-1.1-0.8-1.5-1.5c0,0-11.1-17-11.1-17c-0.3-0.4-0.9-1.3-1.5-1.4c-1.2,0-2.4,0-3.5,0c0,0,0-6,0-6.4 C533.8,50.4,534.9,50.4,534.9,50.4z" /> </g> <g> <path class="st1" d="M591.4,70.9c2.2,0,4.2-0.2,5.8-0.6c1.6-0.4,3.2-1,4.7-1.7v-12h-6.6c-0.6,0-1.1-0.2-1.5-0.5 c-0.4-0.4-0.6-0.8-0.6-1.3v-5.6h17.6V73c-1.3,1-2.7,1.8-4.2,2.5c-1.5,0.7-3,1.3-4.7,1.8c-1.7,0.5-3.4,0.8-5.3,1 c-1.9,0.2-3.9,0.3-6.1,0.3c-3.9,0-7.4-0.7-10.7-2c-3.3-1.3-6.1-3.2-8.4-5.6c-2.4-2.4-4.2-5.3-5.6-8.6c-1.3-3.3-2-7-2-10.9 c0-4,0.6-7.6,1.9-11c1.3-3.3,3.1-6.2,5.5-8.6c2.4-2.4,5.3-4.3,8.7-5.6c3.4-1.3,7.2-2,11.4-2c4.3,0,8.1,0.6,11.2,1.9 c3.2,1.3,5.8,3,8,5l-2.9,4.5c-0.6,0.9-1.3,1.4-2.2,1.4c-0.6,0-1.2-0.2-1.8-0.6c-0.8-0.5-1.6-0.9-2.4-1.4c-0.8-0.5-1.7-0.9-2.7-1.2 c-1-0.3-2.1-0.6-3.3-0.8c-1.2-0.2-2.7-0.3-4.3-0.3c-2.6,0-5,0.4-7.1,1.3c-2.1,0.9-3.9,2.1-5.4,3.8c-1.5,1.6-2.6,3.6-3.4,5.9 c-0.8,2.3-1.2,4.9-1.2,7.7c0,3.1,0.4,5.8,1.3,8.2c0.9,2.4,2.1,4.4,3.6,6s3.4,2.9,5.5,3.8S588.9,70.9,591.4,70.9z" /> </g> <g> <path class="st1" d="M645.7,56.8h-16.1v13.4H653v7.9h-33.4v-53H653V33h-23.5v16.3H648v5.8C648,55.1,647.9,56.8,645.7,56.8z" /> </g></g></svg>
+</a>
+</section>
+</div>
+</div>
+<section class="l-nav-bottom">
+<nav class="row">
+<div class="columns small-12 large-6 copyright-notice">
+&copy; 2022 Slashdot Media. All Rights Reserved.
+</div>
+<div class="columns large-6 links links-right">
+<a href="https://slashdotmedia.com/terms-of-use" title="Terms" rel="nofollow">Terms</a>
+<a href="https://slashdotmedia.com/privacy-statement/" title="Privacy" rel="nofollow">Privacy</a>
+<a href="#" title="Privacy Choices" onclick="bizx.cmp.promptConsent();return false;" class="btn-privay-choices">Privacy Choices</a>
+<a href="https://slashdotmedia.com/contact/" target="_blank" title="Advertise" rel="nofollow">Advertise</a>
+</div>
+</nav>
+</section>
+</footer>
+<div id="l-no-css" style="position:absolute;top:0;z-index:100;font-family:sans-serif;width:100%;background:#fff;padding:0.5rem;border:1px solid #ff3300;box-sizing: border-box;">
+<span style="font-family:sans-serif;color:#ff3300;">Oh no! Some styles failed to load. 😵</span>
+Please try <a href='#' onclick="window.location.href='https://sourceforge.net/software/product/ECAP/?css-reload=2'" rel="nofollow">reloading this page</a>
+</div>
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+    var hasCSS = window.getComputedStyle(document.querySelector('#l-no-css')).display === 'none';
+    if(!hasCSS) {
+        var svgs = document.querySelectorAll('svg');
+        for (var x=0; x<svgs.length; x++){
+            svgs[x].style.display = 'none';
+        }
+        window.scroll(0, 0);  
+        document.getElementById('offCanvas').style.display = 'none';
+        var hides = document.querySelectorAll('.nav-dropdown-menu,.backdrop,#psp-newsletter-modal,.l-header-nav,#breadcrumbs,.breadcrumbs');
+        for (x=0; x<hides.length; x++){
+            hides[x].style.display = 'none';
+        }
+        var problemDownloading = document.getElementById('btn-problems-downloading');
+        if (problemDownloading) {
+            problemDownloading.setAttribute('href', problemDownloading.getAttribute('data-release-url'));
+            problemDownloading.style.fontSize = '40px';
+        }
+    }
+});
+</script>
+</div>
+<script src="//a.fsdn.com/con/js/min/sf.sandiego-base.js?1660230670"></script>
+<script>
+        /* global Dropzone */
+        Dropzone.options.blockthisForm = false;
+    </script>
+<script src="//a.fsdn.com/con/js/min/sf.sandiego-foundation-base.js?1660230670"></script>
+<script src="//a.fsdn.com/con/js/min/sf.sandiego-foundation-tooltip.js?1660230670"></script>
+<script src="//a.fsdn.com/con/js/min/sf.sandiego-foundation-accordion.js?1660230670"></script>
+<script>
+            /* global Foundation */
+            $(document).foundation();
+            Foundation.Triggers.forceListenersNow();
+        </script>
+<script>
+            bizx.cmp.ifConsent('', ['all', 'google-ads'], function () {}, function () {
+                $('body').addClass('no-ads-consent');  
+            });
+            if (!SF.Ads.prebidUnits || !SF.Ads.prebidUnits.length) {
+                $('body').addClass("no-ads");
+            }
+        </script>
+<script>
+
+        function geturl(url, params) {
+            params = Object
+                .keys(params)
+                .map(function(key) {
+                    return key + "=" + encodeURIComponent(params[key]);
+                })
+                .join("&");
+            return url + "?" + params;
+        }
+
+        
+        function loadimg(params, dimension_prefix) {
+            params = Object.assign({"idsite": 1, "rec": 1, "rand": 28689, "dimension2": "pg_commercial_billboard", "url": "https://sourceforge.net/software/product/ECAP/", "action_name": "ECAP Reviews and Pricing 2022", "urlref": "https://www.google.com/", "dimension1": "ECAP"}, params);
+            for (var key in params) {
+                if (params.hasOwnProperty(key) && key.indexOf('dimension') === 0 && params[key] !== undefined) {
+                    params[key] = (dimension_prefix||'') + params[key];
+                }
+            }
+            params.rand = Math.floor(Math.random() * 100000);
+            bizx.cmp.ifConsent('publisher', ['measurement'], function() {
+                var url = geturl("//sourceforge.net/software/visit", params);
+                if (!('sendBeacon' in navigator) || !navigator.sendBeacon(url)) {
+                    var img = document.createElement('img');
+                    img.src = url;
+                    img.style = "border:0;";
+                    img.alt = "";
+                    document.body.appendChild(img);
+                }
+            });
+        }
+
+        var $typeaheads = $('.typeahead__container input[name=q]');
+        $typeaheads.on('typeahead-item-clicked', function(ev, $typeahead, q, item){
+            var groupIndex = ($typeahead.data('groups') || []).indexOf(item.group);
+            if (groupIndex === 2 || groupIndex === 3) {
+                loadimg({
+                    'e_c': 'Search | Typeahead | ' + item.group,
+                    'e_a': "Typeahead Click | q=" + q,
+                    'e_n': item.href, 
+                 }, 'typeahead_on_');
+            }
+        });
+        </script>
+<img src="//sourceforge.net/software/visit?idsite=1&amp;rec=1&amp;rand=28689&amp;dimension2=pg_commercial_billboard&amp;url=https%3A%2F%2Fsourceforge.net%2Fsoftware%2Fproduct%2FECAP%2F&amp;action_name=ECAP+Reviews+and+Pricing+2022&amp;urlref=https%3A%2F%2Fwww.google.com%2F&amp;dimension1=ECAP" style="border:0;position:absolute;top:0" alt="" />
+
+<script>
+  (function () {
+      bizx.cmp.ifConsent('', ['all', 'bombora'], function () {
+          /*global _ml:true, window */
+          _ml = window._ml || {};
+          _ml.eid = '771';
+
+          var s = document.getElementsByTagName('script')[0], cd = new Date(), mltag = document.createElement('script');
+          mltag.type = 'text/javascript';
+          mltag.async = true;
+          mltag.defer = true;
+          mltag.src = '//ml314.com/tag.aspx?' + cd.getDate() + cd.getMonth() + cd.getFullYear();
+          s.parentNode.insertBefore(mltag, s);
+      });
+  })();
+</script>
+
+<div id="overlay-blockthis-wrapper" style="display: none;">
+<div id="overlay-blockthis">
+<div class="as-h2 title">Thanks for helping keep SourceForge clean.</div>
+<a href="#" id="btn-blockthis-close">X</a>
+<form class="dropzone small-12" action="/api/instrumentation/gpt" id="blockthisForm" method="POST">
+<div class="row small-12">
+<div class="column description small-12">
+<input type="hidden" name="_visit_cookie" value="1a0b7ddd-b627-4ffb-a439-be0217858388" />
+<input type='hidden' name='timestamp' value='1660472455' />
+<input type='hidden' name='spinner' value='XYY_CLrcVyPZ2tKr_IDrergB774E' />
+<p class='k8fe3a0ec29264cd596336dc1c32be9d2192d81f0'><label for='XZsOnwq1Aw5Jsw7jDhjdwH09Jw4wwY28pKmU'>You seem to have CSS turned off.
+Please don't fill out this field.</label><input id='XZsOnwq1Aw5Jsw7jDhjdwH09Jw4wwY28pKmU' name='XZ8Onwq1Aw5Jsw7jCt8KyARrClsOWw5QTw4FSwr4LfQ' type="text" /></p>
+<p class='k8fe3a0ec29264cd596336dc1c32be9d2192d81f0'><label for='XZsOnwq1Aw5Jsw7jDhzdwH09Jw4wwY28pKmU'>You seem to have CSS turned off.
+Please don't fill out this field.</label><input id='XZsOnwq1Aw5Jsw7jDhzdwH09Jw4wwY28pKmU' name='XZ8Onwq1Aw5Jsw7nCt8KyARrClsOWw5QTw4FSwr4LfQ' type="text" /></p>
+Briefly describe the problem (required):
+<input name="XasOrwqddw5RnwqHChgLDncOFwpFhw75rHmnCjQFM" type="text" required>
+</div>
+</div>
+<div class="column small-12">
+<div class="upload-text">Upload screenshot of ad (required):</div>
+<div id='upload-it'>
+<a href="#" onclick="return false">Select a file</a>, or drag & drop file here.
+</div>
+<div id="upload-it-placeholder"></div>
+<div class="dropzone-previews" style="display: none"></div>
+<div class="dz-message" style="display: none"></div>
+<div id="dropzone-preview-template" style="display: none">
+<div class="dz-preview dz-file-preview">
+<img data-dz-thumbnail src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="" />
+<div class="dz-success-mark"><span>✔</span></div>
+<div class="dz-error-mark"><span>✘</span></div>
+<div class="dz-error-message"><span data-dz-errormessage></span></div>
+</div>
+</div>
+</div>
+<div class="column small-12">
+<u>Screenshot instructions:</u>
+<a data-external target=_blank href="http://windows.microsoft.com/en-us/windows/take-screen-capture-print-screen#take-screen-capture-print-screen=windows-8">Windows</a>
+</div>
+<div class="row small-12">
+<div class="column large-5 small-6">
+<p>
+<u>Click URL instructions:</u><br>
+Right-click on the ad, choose "Copy Link", then paste here &rarr;<br>
+(This may not be possible with some types of ads)
+</p>
+<a class="more-info" href="https://sourceforge.net/p/forge/documentation/Report%20a%20problem%20with%20Ad%20content/" target="_blank">More information about our ad policies</a>
+</div>
+<div class="column large-7 small-6">
+<p>Please provide the ad click URL, if possible:
+<input name="XaMOswq5Hw5R:wpfCgwTDmMOrO8KVworCt1jDrsK2woDDkw" type="url">
+</p>
+<textarea id="gpt-info" name="XZcOrwqNaw5ZUDEPDhsOdXBHDrVXCjGvDpMKHwpDCiw"></textarea>
+<input class="button" type="submit" id="btn-blockthis-submit" value="Submit Report">
+</div>
+</div>
+</form>
+</div>
+</div>
+<script src="//a.fsdn.com/con/js/min/sf.sandiego-project.js?1660230670"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"73a8f5ed2e1eb71e","token":"05ab2f27910c4db284f4fcdcd6948338","version":"2022.6.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

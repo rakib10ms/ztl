@@ -1,0 +1,132 @@
+/*header top area styles*/
+
+.active1 {
+  height: 3rem;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  transition: 0.3s linear;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  background-color: #F7921E;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  z-index: 40;
+  box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .08);
+}
+
+.hidden {
+  height: 4rem;
+  width: 100%;
+  z-index: 40;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .08);
+  position: fixed;
+  top: -80px;
+  transition: 0.3s linear;
+
+}
+
+.header__top {
+  margin-bottom: 48px;
+}
+
+.ht-social {
+  float: right;
+}
+
+.ht-email span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+.ht-social a {
+  background: #fff;
+  color: #515151;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+  font-size: 15px;
+  margin-left: 12px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #F7921E;
+}
+
+.ht-social .facebook:hover {
+  background: #4267B2;
+  color: #fff;
+}
+.ht-social .twitter:hover {
+  background:	#1DA1F2;
+  color: #fff;
+}
+.ht-social .linkedin:hover {
+  background: #0077B5;
+  color: #fff;
+}
+.ht-social .whatsapp:hover {
+  background: #25D366;
+  color: #fff;
+}
+.ht-social .instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color: #fff;
+}
+.ht-social .pinterest:hover {
+  background: #E60023;
+  color: #fff;
+}
+
+.ht-social select {
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 4px;
+  background: #ededed;
+  border: none;
+  margin-right: 7px;
+}
+
+.contact__top ul {
+  display: flex;
+  text-align: start;
+}
+
+.contact__top ul li {
+  line-height: 235%;
+  padding-left: 15px;
+  color: #fff;
+}
+
+
+
+@media all and (max-width: 480px) {
+  .header__top {
+    margin-bottom: 100px;
+  }
+  .active1 {
+    height: 6.2rem;
+  }
+
+  .ht-email span {
+    display: inline-block;
+    font-size: 12px;
+  }
+
+  .ht-social a {
+    height: 25px;
+    line-height: 21px;
+    width: 25px;
+    font-size: 15px;
+  }
+
+  .ht-email {
+    margin-bottom: 5px;
+  }
+
+  .ht-social select {
+    border-radius: 4px;
+    font-size: 14px;
+  }
+}
