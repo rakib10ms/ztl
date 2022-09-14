@@ -5,7 +5,7 @@ import { Link, Navigate, useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2';
 import DashboardFooter from '../../dashboard/Footer';
 import DashboardHeader from '../../dashboard/DashboardHeader';
-function AdminLogin() {
+function AdminLogin({ update }) {
 
     const navigate = useNavigate();
 
@@ -21,31 +21,40 @@ function AdminLogin() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        // update('yes')
+
         // console.log('state checking', loginInput)
 
         // axios.get('/sanctum/csrf-cookie').then(response => {
         axios.post('/login', loginInput).then(res => {
+
+
             if (res.data.status == 200) {
+
                 let admin_auth={
                     name:res.data.username,
                     user_type:res.data.user_type,
                     token:res.data.token,
-                    email:res.data.email
+                    email:res.data.email,
+                    status:'yes'
                 }
-                localStorage.setItem('auth_token',res.data.token);
-                localStorage.setItem('username',res.data.username);
-                localStorage.setItem('email',res.data.email);
-                localStorage.setItem('user_type',res.data.user_type);
-                  if (res.data.user_type=== 'super_admin') {
+                update(admin_auth)
 
-                    navigate('/dashboard')
-                }
-                else if(res.data.user_type=== 'user'){
-                    navigate('/')
+                // localStorage.setItem('auth_token',res.data.token);
+                // localStorage.setItem('username',res.data.username);
+                // localStorage.setItem('email',res.data.email);
+                // localStorage.setItem('user_type',res.data.user_type);
+                //   if (res.data.user_type=== 'super_admin') {
 
-                }
+                //     navigate('/dashboard')
+                // }
+                // else if(res.data.user_type=== 'user'){
+                //     navigate('/')
 
-                window.location.reload();
+                // }
+
+                // window.location.reload();
 
                 // Swal.fire('Logged in successfully', '', 'success')
 

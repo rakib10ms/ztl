@@ -278,8 +278,32 @@ import ForgotPasswordForm from './BackendComponents/Authentication/ForgotPasswor
 
 import CareerJobDescription from './Components/career/CareerJobDescription';
 import HospitalMSystem from './Components/portfolio/HospitalMSystem';
-function App() {
+function App(props) {
+  const[success,setSuccess]=useState('');
+  console.log('global props checking',props)
+  let onClickFunction = (arg) => setSuccess(arg);
+  console.log('success checking11111111',success)
   const navigate=useNavigate();
+
+  useEffect(()=>{
+    if(success.status=='yes'){
+      localStorage.setItem('auth_token',success.token);
+      localStorage.setItem('username',success.username);
+      localStorage.setItem('email',success.email);
+      localStorage.setItem('user_type',success.user_type);
+        if (success.user_type=== 'super_admin') {
+    
+          navigate('/dashboard')
+      }
+      else if(success.user_type=== 'user'){
+          navigate('/')
+    
+      }
+    
+    }
+  },[success])
+
+
 // const [trigger,setTrigger]=useState();
 // console.log('hel',trigger);
 
@@ -394,7 +418,7 @@ function App() {
      
         {/* <Route path="*" element={<UserLogin />} /> */}
         {/* <Route path="user-login" element={<UserLogin />}></Route> */}
-        <Route path="admin-login" element={<AdminLogin />}></Route>
+        <Route path="admin-login" element={<AdminLogin update={onClickFunction} />}></Route>
         {/* <Route path="user-registration" element={<UserRegistrationForm/>}></Route> */}
         {/* <Route path="forgot-password" element={<ForgotPasswordForm/>}></Route> */}
 
@@ -409,6 +433,8 @@ function App() {
 
         <Route element={<ProtectedRoutes/>}>
             {
+
+            success.status==='yes'?
               storageData==='super_admin' &&
               <>
            <Route path="dashboard" element={<MasterDashboardLayout />}></Route>
@@ -663,9 +689,12 @@ function App() {
 
 
               </>
+              :
+              <Route path="user-login" element={<UserLogin />}></Route>
 
     
             }
+       
 
  
           
